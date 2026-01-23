@@ -51,7 +51,7 @@ nav ul li a:hover {
 }
 
 .hero-background {
-    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    background: url('assets/hero-bg.png') center/cover no-repeat;
     padding: 80px 20px;
     text-align: center;
     color: #fff;
@@ -220,4 +220,5 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
