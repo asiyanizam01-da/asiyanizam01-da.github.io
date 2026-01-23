@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: #e0f7f1; /* greenish-blue */
+    background: #ffffff; /* clean white background */
     scroll-behavior: smooth;
 }
 
@@ -13,6 +13,15 @@ body {
     max-width: 1000px;  /* limits how wide content can go */
     margin: 0 auto;      /* centers the container */
     padding: 0 20px;     /* adds space on left & right */
+}
+
+.job, .volunteer {
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #e0f2f1;
 }
 
 /* Navbar */
@@ -275,5 +284,6 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
