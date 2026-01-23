@@ -7,7 +7,12 @@ body {
     background: #e0f7f1; /* greenish-blue */
     scroll-behavior: smooth;
 }
-
+/* Container to center content and add margins */
+.container {
+    max-width: 1000px;  /* limits how wide content can go */
+    margin: 0 auto;      /* centers the container */
+    padding: 0 20px;     /* adds space on left & right */
+}
 nav {
     position: sticky;
     top: 0;
@@ -215,3 +220,4 @@ footer {
         margin-bottom: 10px;
     }
 }
+
