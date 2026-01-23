@@ -1,34 +1,34 @@
-/* General */
+/* =====================
+   GENERAL
+===================== */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background: #ffffff; /* clean white background */
+    background: #ffffff;
     scroll-behavior: smooth;
 }
 
-/* Container to center content and add margins */
+/* Container */
 .container {
-    max-width: 1000px;  /* limits how wide content can go */
-    margin: 0 auto;      /* centers the container */
-    padding: 0 20px;     /* adds space on left & right */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.job, .volunteer {
-    background: #ffffff;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-section {
-    padding: 60px 0;
-    border-bottom: 1px solid #e0f2f1;
+/* Global paragraph spacing */
+p {
+    margin: 0 0 16px 0;
 }
 
-/* Navbar */
+/* =====================
+   NAVBAR
+===================== */
 nav {
     position: sticky;
     top: 0;
-    background: #20b2aa; /* greenish-blue navbar */
+    background: #20b2aa;
     padding: 10px 0;
     z-index: 1000;
 }
@@ -57,29 +57,23 @@ nav ul li a:hover {
     color: #fffa65;
 }
 
-/* HERO */
+/* =====================
+   HERO
+===================== */
 #hero {
     margin-bottom: 0;
 }
 
 .hero-background {
-    background: url('assets/hero-bg.png') center/cover no-repeat;
+    background: url('assets/hero-bg.png') center/contain no-repeat;
     padding: 80px 20px;
     text-align: center;
-    color: #fff;
-    position: relative;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2; /* text above overlay */
 }
 
 .hero-content h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     color: #20b2aa;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .caption {
@@ -87,66 +81,64 @@ nav ul li a:hover {
     font-size: 28px;
     font-style: italic;
     color: #20b2aa;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .profile-pic {
-    width: 250px;       /* bigger size */
-    height: 250px;      /* square */
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 4px solid #20b2aa; /* greenish border */
-    object-fit: cover;   /* ensures photo fits nicely */
+    border: 4px solid #20b2aa;
+    object-fit: cover;
 }
 
-/* Sections */
+/* =====================
+   SECTIONS (KEY FIX)
+===================== */
 section {
-    margin-bottom: 40px;
-    padding: 40px 0;
+    padding: 50px 0;
+    border-bottom: 1px solid #e0f2f1;
     opacity: 0;
     transform: translateY(50px);
 }
 
+/* Headings */
 h2 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin: 0 0 24px 0;
     color: #00796b;
 }
 
-/* About Section */
-#about {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
+/* =====================
+   ABOUT
+===================== */
 #about p {
     text-align: justify;
-    text-justify: inter-word;
     line-height: 1.6;
     font-size: 18px;
     color: #004d40;
-    margin: 0; /* starts directly below heading */
 }
 
-/* Interests */
+/* =====================
+   INTERESTS
+===================== */
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .interest-card {
     background: #b2dfdb;
     padding: 15px 20px;
     border-radius: 12px;
-    text-align: center;
     font-weight: 600;
-    transition: transform 0.3s, background 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: transform 0.3s, background 0.3s;
 }
 
 .interest-card:hover {
@@ -155,15 +147,17 @@ h2 {
 }
 
 .interest-card i {
-    font-size: 24px;
+    font-size: 22px;
     color: #00796b;
 }
 
-/* Skills */
+/* =====================
+   SKILLS (COLORFUL)
+===================== */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 14px;
     padding: 0;
     margin: 0;
 }
@@ -175,41 +169,39 @@ h2 {
     font-weight: 600;
     font-size: 15px;
     color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    cursor: default;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skills-list li:hover {
-    background: #4db6ac;
-    transform: scale(1.05);
-}
-
-.skills-list li:nth-child(1) { background: #4db6ac; } /* teal */
-.skills-list li:nth-child(2) { background: #81c784; } /* green */
-.skills-list li:nth-child(3) { background: #64b5f6; } /* blue */
-.skills-list li:nth-child(4) { background: #9575cd; } /* purple */
-.skills-list li:nth-child(5) { background: #ffb74d; } /* orange */
-.skills-list li:nth-child(6) { background: #4fc3f7; } /* sky blue */
-.skills-list li:nth-child(7) { background: #aed581; } /* lime */
-.skills-list li:nth-child(8) { background: #f06292; } /* pink */
-
-.skills-list li:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-4px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Experience & Volunteering */
-.job, .volunteer {
-    background: #fff;
-    padding: 15px 20px;
+.skills-list li:nth-child(1) { background: #4db6ac; }
+.skills-list li:nth-child(2) { background: #81c784; }
+.skills-list li:nth-child(3) { background: #64b5f6; }
+.skills-list li:nth-child(4) { background: #9575cd; }
+.skills-list li:nth-child(5) { background: #ffb74d; }
+.skills-list li:nth-child(6) { background: #4fc3f7; }
+.skills-list li:nth-child(7) { background: #aed581; }
+.skills-list li:nth-child(8) { background: #f06292; }
+
+/* =====================
+   EXPERIENCE & VOLUNTEERING
+===================== */
+.job,
+.volunteer {
+    background: #ffffff;
+    padding: 20px;
     border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     transition: transform 0.3s;
 }
 
-.job:hover, .volunteer:hover {
+.job:hover,
+.volunteer:hover {
     transform: translateY(-5px);
 }
 
@@ -224,18 +216,9 @@ h2 {
     color: #20b2aa;
 }
 
-.volunteer-info h3 {
-    margin: 0 0 5px 0;
-    font-size: 18px;
-}
-
-.volunteer-info p {
-    margin: 2px 0;
-    font-size: 16px;
-    color: #555;
-}
-
-/* Contact */
+/* =====================
+   CONTACT
+===================== */
 .contact-list li {
     margin-bottom: 10px;
     font-size: 18px;
@@ -250,7 +233,9 @@ h2 {
     text-decoration: underline;
 }
 
-/* Footer */
+/* =====================
+   FOOTER
+===================== */
 footer {
     text-align: center;
     padding: 20px;
@@ -258,14 +243,18 @@ footer {
     color: #fff;
 }
 
-/* Scroll Animations */
+/* =====================
+   ANIMATIONS
+===================== */
 .fade-in {
     opacity: 1 !important;
     transform: translateY(0) !important;
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Responsive */
+/* =====================
+   RESPONSIVE
+===================== */
 @media (max-width: 600px) {
     .skills-list {
         flex-direction: column;
@@ -274,16 +263,4 @@ footer {
     .interests-grid {
         grid-template-columns: 1fr;
     }
-
-    .volunteer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .volunteer-logo, .volunteer-icon {
-        margin-bottom: 10px;
-    }
 }
-
-
-
