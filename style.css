@@ -1,0 +1,189 @@
+/* General */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f7f9fc;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #457b9d;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1faee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* HERO */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #a8dadc;
+    color: #1d3557;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #457b9d;
+}
+
+/* Sections */
+section {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #e63946;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skills-list li:hover {
+    background: #f77f00;
+    transform: scale(1.05);
+}
+
+/* Interests */
+.interests-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Experience & Volunteering */
+.job, .volunteer {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.job:hover, .volunteer:hover {
+    transform: translateY(-5px);
+}
+
+.volunteer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.volunteer-icon {
+    font-size: 50px;
+    color: #e63946;
+}
+
+.volunteer-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.volunteer-info p {
+    margin: 2px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact */
+.contact-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-list a {
+    color: #1d3557;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1d3557;
+    color: #fff;
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .skills-list {
+        flex-direction: column;
+    }
+
+    #volunteering .volunteer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .volunteer-logo, .volunteer-icon {
+        margin-bottom: 10px;
+    }
+}
