@@ -205,13 +205,12 @@ footer {
 }
 
 #about p {
-    text-align: justify;      /* aligns both left and right edges */
-    text-justify: inter-word; /* better spacing between words */
-    line-height: 1.6;         /* improves readability */
-    font-size: 18px;
-    max-width: 1200px;         /* optional: keeps paragraph from being too wide */
-    margin: 0 auto;           /* centers the block */
-    color: #004d40;           /* greenish color matching theme */
+    text-align: justify;      /* justifies text left & right */
+    text-justify: inter-word; 
+    line-height: 1.6;         
+    font-size: 18px;          
+    color: #004d40;           
+    margin: 0;                /* remove auto-centering */
 }
 
 /* Responsive */
@@ -233,6 +232,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
