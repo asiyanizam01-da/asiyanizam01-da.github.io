@@ -155,23 +155,39 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 .skills-list li {
-    background: #80cbc4; /* light green */
-    color: white;
-    padding: 8px 15px;
-    border-radius: 10px;
     list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: transform 0.3s, background 0.3s;
+    padding: 10px 18px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    cursor: default;
 }
 
 .skills-list li:hover {
     background: #4db6ac;
     transform: scale(1.05);
+}
+
+.skills-list li:nth-child(1) { background: #4db6ac; } /* teal */
+.skills-list li:nth-child(2) { background: #81c784; } /* green */
+.skills-list li:nth-child(3) { background: #64b5f6; } /* blue */
+.skills-list li:nth-child(4) { background: #9575cd; } /* purple */
+.skills-list li:nth-child(5) { background: #ffb74d; } /* orange */
+.skills-list li:nth-child(6) { background: #4fc3f7; } /* sky blue */
+.skills-list li:nth-child(7) { background: #aed581; } /* lime */
+.skills-list li:nth-child(8) { background: #f06292; } /* pink */
+
+.skills-list li:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* Experience & Volunteering */
@@ -259,4 +275,5 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
