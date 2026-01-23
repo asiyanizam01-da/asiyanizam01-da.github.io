@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: #f7f9fc;
+    background: #e0f7f1; /* greenish-blue */
     scroll-behavior: smooth;
 }
 
 nav {
     position: sticky;
     top: 0;
-    background: #457b9d;
+    background: #20b2aa; /* greenish-blue navbar */
     padding: 10px 0;
     z-index: 1000;
 }
@@ -33,47 +33,77 @@ nav ul li a {
     text-decoration: none;
     color: #f1faee;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #e63946;
-}
-
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 0;
+    color: #fffa65;
 }
 
 /* HERO */
 #hero {
+    margin-bottom: 0;
+}
+
+.hero-background {
+    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    padding: 80px 20px;
     text-align: center;
-    padding: 100px 20px;
-    background: #a8dadc;
-    color: #1d3557;
-    opacity: 0;
-    transform: translateY(50px);
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    font-style: italic;
+    color: #e0f7f1;
 }
 
 .profile-pic {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 4px solid #457b9d;
+    border: 4px solid #20b2aa;
 }
 
 /* Sections */
 section {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    padding: 40px 0;
     opacity: 0;
     transform: translateY(50px);
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
-    color: #1d3557;
+    color: #00796b;
+}
+
+/* Interests */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.interest-card {
+    background: #b2dfdb;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    background: #80cbc4;
 }
 
 /* Skills */
@@ -84,10 +114,10 @@ h2 {
 }
 
 .skills-list li {
-    background: #e63946;
+    background: #80cbc4; /* light green */
     color: white;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -96,23 +126,17 @@ h2 {
 }
 
 .skills-list li:hover {
-    background: #f77f00;
+    background: #4db6ac;
     transform: scale(1.05);
-}
-
-/* Interests */
-.interests-list li {
-    margin-bottom: 10px;
-    font-size: 18px;
 }
 
 /* Experience & Volunteering */
 .job, .volunteer {
     background: #fff;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 20px;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
 
@@ -128,7 +152,7 @@ h2 {
 
 .volunteer-icon {
     font-size: 50px;
-    color: #e63946;
+    color: #20b2aa;
 }
 
 .volunteer-info h3 {
@@ -149,7 +173,7 @@ h2 {
 }
 
 .contact-list a {
-    color: #1d3557;
+    color: #00796b;
     text-decoration: none;
 }
 
@@ -161,7 +185,7 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #1d3557;
+    background: #00796b;
     color: #fff;
 }
 
@@ -178,7 +202,11 @@ footer {
         flex-direction: column;
     }
 
-    #volunteering .volunteer {
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .volunteer {
         flex-direction: column;
         text-align: center;
     }
