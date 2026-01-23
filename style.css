@@ -209,7 +209,7 @@ footer {
     text-justify: inter-word; /* better spacing between words */
     line-height: 1.6;         /* improves readability */
     font-size: 18px;
-    max-width: 800px;         /* optional: keeps paragraph from being too wide */
+    max-width: 1200px;         /* optional: keeps paragraph from being too wide */
     margin: 0 auto;           /* centers the block */
     color: #004d40;           /* greenish color matching theme */
 }
@@ -233,6 +233,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
