@@ -204,6 +204,16 @@ footer {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+#about p {
+    text-align: justify;      /* aligns both left and right edges */
+    text-justify: inter-word; /* better spacing between words */
+    line-height: 1.6;         /* improves readability */
+    font-size: 18px;
+    max-width: 800px;         /* optional: keeps paragraph from being too wide */
+    margin: 0 auto;           /* centers the block */
+    color: #004d40;           /* greenish color matching theme */
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .skills-list {
@@ -223,6 +233,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
