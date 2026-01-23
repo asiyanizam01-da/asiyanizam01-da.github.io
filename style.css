@@ -7,12 +7,15 @@ body {
     background: #e0f7f1; /* greenish-blue */
     scroll-behavior: smooth;
 }
+
 /* Container to center content and add margins */
 .container {
     max-width: 1000px;  /* limits how wide content can go */
     margin: 0 auto;      /* centers the container */
     padding: 0 20px;     /* adds space on left & right */
 }
+
+/* Navbar */
 nav {
     position: sticky;
     top: 0;
@@ -55,24 +58,41 @@ nav ul li a:hover {
     padding: 80px 20px;
     text-align: center;
     color: #fff;
+    position: relative;
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(32,178,170,0.4); /* greenish overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* text above overlay */
 }
 
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
     color: #20b2aa;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .caption {
     font-family: 'Great Vibes', cursive;
     font-size: 28px;
     font-style: italic;
-    color: #20b2aa;   /* same greenish-blue for caption */
+    color: #20b2aa;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .profile-pic {
     width: 250px;       /* bigger size */
-    height: 250px;      /* make it square */
+    height: 250px;      /* square */
     border-radius: 50%;
     margin-bottom: 20px;
     border: 4px solid #20b2aa; /* greenish border */
@@ -93,11 +113,27 @@ h2 {
     color: #00796b;
 }
 
+/* About Section */
+#about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#about p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #004d40;
+    margin: 0; /* starts directly below heading */
+}
+
 /* Interests */
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
+    margin-top: 20px;
 }
 
 .interest-card {
@@ -107,11 +143,20 @@ h2 {
     text-align: center;
     font-weight: 600;
     transition: transform 0.3s, background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .interest-card:hover {
     transform: translateY(-5px);
     background: #80cbc4;
+}
+
+.interest-card i {
+    font-size: 24px;
+    color: #00796b;
 }
 
 /* Skills */
@@ -204,15 +249,6 @@ footer {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-#about p {
-    text-align: justify;      /* justifies text left & right */
-    text-justify: inter-word; 
-    line-height: 1.6;         
-    font-size: 18px;          
-    color: #004d40;           
-    margin: 0;                /* remove auto-centering */
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     .skills-list {
@@ -232,9 +268,3 @@ footer {
         margin-bottom: 10px;
     }
 }
-
-
-
-
-
-
