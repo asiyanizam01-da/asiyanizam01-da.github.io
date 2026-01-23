@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asiya Nizam</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -15,20 +15,22 @@
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
-            <li><a href="#interests">Interests</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- HERO -->
     <header id="hero" class="animate">
-        <div class="container">
-            <img src="assets/profile.jpg" alt="Asiya Nizam" class="profile-pic">
-            <h1>Hi, I'm Asiya Nizam</h1>
-            <p>Data Analyst passionate about turning data into meaningful insights</p>
+        <div class="hero-background">
+            <div class="container hero-content">
+                <img src="assets/profile.jpg" alt="Asiya Nizam" class="profile-pic">
+                <h1>Hi, I'm Asiya Nizam</h1>
+                <p class="caption">Watashi no monogatari</p>
+            </div>
         </div>
     </header>
 
@@ -42,6 +44,22 @@
                 I’ve worked in technical consulting and manufacturing, combining analytical thinking with practical problem-solving. 
                 Naturally detail-oriented and endlessly curious, I enjoy digging into data to uncover the stories it has to tell.
             </p>
+        </div>
+    </section>
+
+    <!-- THINGS I ENGAGE IN -->
+    <section id="interests" class="animate">
+        <div class="container">
+            <h2>Things I Engage In</h2>
+            <div class="interests-grid">
+                <div class="interest-card"><i class="fas fa-chart-line"></i> Working with data</div>
+                <div class="interest-card"><i class="fas fa-chart-pie"></i> Visualizing data</div>
+                <div class="interest-card"><i class="fas fa-cogs"></i> Exploring SAP</div>
+                <div class="interest-card"><i class="fas fa-utensils"></i> Amateur Chef</div>
+                <div class="interest-card"><i class="fas fa-money-bill-wave"></i> Analyzing markets & trading</div>
+                <div class="interest-card"><i class="fas fa-lightbulb"></i> Learning new skills</div>
+                <div class="interest-card"><i class="fas fa-dragon"></i> Diving into anime & manga</div>
+            </div>
         </div>
     </section>
 
@@ -118,21 +136,6 @@
         </div>
     </section>
 
-    <!-- INTERESTS -->
-    <section id="interests" class="animate">
-        <div class="container">
-            <h2>Things I Engage In</h2>
-            <ul class="interests-list">
-                <li><i class="fas fa-chart-line"></i> Working with data</li>
-                <li><i class="fas fa-chart-pie"></i> Visualizing data</li>
-                <li><i class="fas fa-cogs"></i> Exploring SAP</li>
-                <li><i class="fas fa-utensils"></i> Amateur Chef</li>
-                <li><i class="fas fa-money-bill-wave"></i> Analyzing markets & trading</li>
-                <li><i class="fas fa-lightbulb"></i> Learning new skills</li>
-            </ul>
-        </div>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact" class="animate">
         <div class="container">
@@ -149,10 +152,8 @@
         <p>© 2026 Asiya Nizam</p>
     </footer>
 
-    <!-- Scroll Animation Script -->
     <script>
         const animateElements = document.querySelectorAll('.animate');
-
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if(entry.isIntersecting){
@@ -163,6 +164,5 @@
 
         animateElements.forEach(el => observer.observe(el));
     </script>
-
 </body>
 </html>
