@@ -267,11 +267,11 @@ footer {
 /* =====================
    MOBILE HERO FIX
 ===================== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .hero-background {
-        padding: 50px 20px;          /* reduce vertical padding */
-        background-position: top;    /* keeps image aligned nicely */
+        padding: 50px 20px;
+        background-position: top center;
     }
 
     .profile-pic {
@@ -290,3 +290,4 @@ footer {
         margin-top: 5px;
     }
 }
+
