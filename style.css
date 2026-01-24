@@ -205,6 +205,44 @@ h2 {
     transform: translateY(-5px);
 }
 
+/* =====================
+   EXPERIENCE GRID
+===================== */
+.experience-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.experience-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.experience-content h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.experience-content ul {
+    margin: 10px 0 0 18px;
+    padding: 0;
+}
+
+.job-role {
+    font-size: 14px;
+    color: #555;
+    margin-top: 4px;
+}
+
 .volunteer-logo {
     width: 60px;
     height: 60px;
@@ -289,5 +327,20 @@ footer {
         font-size: 22px;
         margin-top: 5px;
     }
+   .experience-grid {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .experience-logo {
+        justify-content: flex-start;
+    }
+
+    .experience-logo img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
 }
+
 
