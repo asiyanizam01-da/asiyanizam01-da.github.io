@@ -264,3 +264,29 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =====================
+   MOBILE HERO FIX
+===================== */
+@media (max-width: 600px) {
+
+    .hero-background {
+        padding: 50px 20px;          /* reduce vertical padding */
+        background-position: top;    /* keeps image aligned nicely */
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .caption {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+}
