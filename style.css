@@ -243,6 +243,113 @@ h2 {
     margin-top: 4px;
 }
 
+/* --- Virtual Experience Tiles --- */
+.tiles-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tile-front, .tile-back {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tile-front h3, .tile-back h3 {
+    margin: 10px 0 5px;
+}
+
+.tile-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.tile-logo-small {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.tile-back {
+    transform: rotateY(180deg);
+}
+
+.tile.active .tile-front {
+    transform: rotateY(180deg);
+}
+
+.tile.active .tile-back {
+    transform: rotateY(0deg);
+}
+
+.back-content ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.close-tile {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --- Certifications --- */
+.cert-category {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.cert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.cert-logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.cert-list {
+    display: none;
+    padding: 10px 40px;
+    list-style: disc;
+    background: #fff;
+}
+
+.cert-category.active .cert-list {
+    display: block;
+}
+
 .volunteer-logo {
     width: 60px;
     height: 60px;
@@ -342,5 +449,6 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
