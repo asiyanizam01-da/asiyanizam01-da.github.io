@@ -323,7 +323,7 @@ h2 {
     cursor: pointer;
 }
 .tile-front.deloitte {
-    background-color: #00693e; /* Deloitte green */
+    background-color: #a0eb3f; /* Deloitte green */
     color: #fff; /* white text for contrast */
 }
 
@@ -333,7 +333,7 @@ h2 {
 }
 
 .tile-front.deloitte:hover {
-    background-color: #008f5e; /* lighter green on hover */
+    background-color: #75b325; /* lighter green on hover */
 }
 
 /* --- Certifications --- */
@@ -468,6 +468,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
