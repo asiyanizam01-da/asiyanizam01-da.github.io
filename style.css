@@ -248,6 +248,8 @@ h2 {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px; /* extra space for expanded tiles */
 }
 
 .tile {
@@ -255,6 +257,7 @@ h2 {
     perspective: 1000px;
     cursor: pointer;
     position: relative;
+    min-height: 250px; /* ensures container space */
 }
 
 .tile-front, .tile-back {
@@ -292,6 +295,9 @@ h2 {
 
 .tile-back {
     transform: rotateY(180deg);
+    height: 100%; /* match parent height */
+    overflow-y: auto; /* scroll if content overflows */
+    padding: 20px;
 }
 
 .tile.active .tile-front {
@@ -315,6 +321,19 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.tile-front.deloitte {
+    background-color: #00693e; /* Deloitte green */
+    color: #fff; /* white text for contrast */
+}
+
+.tile-front.deloitte h3,
+.tile-front.deloitte p {
+    color: #fff;
+}
+
+.tile-front.deloitte:hover {
+    background-color: #008f5e; /* lighter green on hover */
 }
 
 /* --- Certifications --- */
@@ -449,6 +468,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
