@@ -354,35 +354,80 @@ h2 {
 
 /* --- Certifications --- */
 .cert-category {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 15px 0;
+    border: 1px solid #d0ece7;
+    border-radius: 14px;
+    margin: 18px 0;
     overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
 }
 
+/* Header */
 .cert-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 14px 20px;
     cursor: pointer;
-    background: #f9f9f9;
+    background: #e0f7f4;
+    transition: background 0.3s ease;
 }
 
+.cert-header:hover {
+    background: #c8f1ec;
+}
+
+.cert-header h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #004d40;
+    flex: 1;
+}
+
+/* Logo */
 .cert-logo {
-    width: 40px;
-    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    margin-right: 12px;
 }
 
+/* Toggle button */
+.toggle-cert {
+    background: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* List */
 .cert-list {
     display: none;
-    padding: 10px 40px;
-    list-style: disc;
-    background: #fff;
+    padding: 16px 30px 20px;
+    background: #ffffff;
 }
 
 .cert-category.active .cert-list {
     display: block;
+}
+
+/* List items */
+.cert-list li {
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    background: #f1fbfa;
+    border-left: 4px solid #20b2aa;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #004d40;
+    transition: transform 0.2s ease;
+}
+
+.cert-list li:hover {
+    transform: translateX(6px);
 }
 
 .volunteer-logo {
@@ -484,6 +529,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
