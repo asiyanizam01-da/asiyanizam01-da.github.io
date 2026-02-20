@@ -294,6 +294,16 @@ h2 {
     height: auto;
 }
 
+/* Citi front */
+.tile-front.citi {
+    background-color: #003b70; /* Citi blue */
+}
+
+.tile-front.citi .tile-logo {
+    width: 120px;
+    height: auto;
+}
+
 /* BACK */
 .tile-back {
     background: #ffffff;
@@ -529,6 +539,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
