@@ -245,11 +245,11 @@ h2 {
 
 /* --- Virtual Experience Tiles --- */
 .tiles-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 40px; /* space for flipped tiles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding-bottom: 40px;
 }
 
 .tile {
@@ -258,6 +258,7 @@ h2 {
     perspective: 1000px;
     cursor: pointer;
     position: relative;
+    margin: 0 auto;   /* prevents side overlap */
 }
 
 /* FRONT & BACK */
@@ -539,6 +540,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 
 
 
