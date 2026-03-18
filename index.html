@@ -17,6 +17,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#interests">Interests</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#virtual-experience">Virtual Experience</a></li> <!-- New -->
         <li><a href="#certifications">Certifications</a></li> <!-- New -->
@@ -80,6 +81,32 @@
             </ul>
         </div>
     </section>
+
+    <!-- PROJECTS -->
+<section id="projects" class="animate">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Bellabeat Project Card -->
+        <div class="project-card">
+            <h3>Bellabeat Data Analysis Project</h3>
+            <p>
+                Analyzed smart device usage data to understand activity, sleep, and wellness patterns.
+                Insights were applied to inform marketing strategy for Bellabeat products.
+                <br><strong>Tools Used:</strong> MS Excel, Python, VS Code, Power BI
+            </p>
+            <button class="dashboard-btn">View Project Dashboard</button>
+        </div>
+    </div>
+</section>
+
+<!-- POPUP OVERLAY -->
+<div id="dashboard-popup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <img src="assets/Bellabeat_Project_Dashboard.png" alt="Bellabeat Project Dashboard">
+    </div>
+</div>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="animate">
@@ -286,6 +313,29 @@
         animateElements.forEach(el => observer.observe(el));
     </script>
 <script src="assets/js/virtual-cert.js"></script>
+    
+ <script>
+    const dashboardBtn = document.querySelector('.dashboard-btn');
+    const popup = document.getElementById('dashboard-popup');
+    const popupClose = document.querySelector('.popup-close');
+
+    // Open popup
+    dashboardBtn.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    // Close popup when clicking the X
+    popupClose.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // Close popup when clicking outside the image
+    popup.addEventListener('click', (e) => {
+        if(e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+</script>   
 </body>
 </html>
 
