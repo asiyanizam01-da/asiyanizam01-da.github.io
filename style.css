@@ -232,37 +232,45 @@ h2 {
     z-index: 2000;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* added padding so image doesn't touch screen edges */
+    padding: 10px; /* padding from screen edges */
 }
 
 /* Popup content */
 .popup-content {
     position: relative;
-    max-width: 800px; /* limit width */
-    max-height: 90vh; /* limit height to 90% of viewport */
-    width: 100%;
-    overflow: auto; /* scroll if too tall */
+    width: 90%;
+    max-width: 600px;   /* smaller popup */
+    max-height: 80vh;   /* limit height */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Image inside popup */
 .popup-content img {
     width: 100%;
-    height: auto;
-    border-radius: 12px;
+    height: 100%;
+    object-fit: contain; /* fit inside the popup without stretching */
     display: block;
 }
 
 /* Close Button */
 .popup-close {
     position: absolute;
-    top: -12px;
-    right: -12px;
+    top: 8px;
+    right: 8px;
     background: #ff5252;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     border-radius: 50%;
-    padding: 0 10px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
     cursor: pointer;
     z-index: 10;
 }
