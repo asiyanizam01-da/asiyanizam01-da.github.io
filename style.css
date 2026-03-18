@@ -239,8 +239,8 @@ h2 {
 .popup-content {
     position: relative;
     width: 90%;
-    max-width: 600px;   /* smaller popup */
-    max-height: 80vh;   /* limit height */
+    max-width: 800px;   /* popup width */
+    max-height: 150vh;   /* limit height */
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
