@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,84 +10,103 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
- <nav>
-    <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#virtual-experience">Virtual Experience</a></li> <!-- New -->
-        <li><a href="#certifications">Certifications</a></li> <!-- New -->
-        <li><a href="#volunteering">Volunteering</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<!-- SCROLL PROGRESS BAR -->
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#virtual-experience">Virtual Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
 </nav>
 
-    <!-- HERO -->
-    <header id="hero" class="animate">
-        <div class="hero-background">
-            <div class="container hero-content">
-                <img src="assets/profile.jpg" alt="Asiya Nizam" class="profile-pic">
-                <h1>Hi, I'm Asiya Nizam</h1>
-                <p class="caption">Watashi no Monogatari</p>
-            </div>
+<!-- HERO -->
+<header id="hero" class="animate">
+    <!-- Animated modern background -->
+    <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+    </div>
+    <div class="hero-background">
+        <div class="container hero-content">
+            <img src="assets/profile.jpg" alt="Asiya Nizam" class="profile-pic">
+            <h1>Hi, I'm Asiya Nizam</h1>
+            <p class="caption">Watashi no Monogatari</p>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- ABOUT ME -->
-    <section id="about" class="animate">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I’m a Master’s graduate in Engineering Management from the University of Greenwich, UK. 
-                I also have a Bachelor’s in Engineering from APJ Abdul Kalam Technological University, Trivandrum. 
-                I’ve worked in technical consulting and manufacturing, combining analytical thinking with practical problem-solving. 
-                Naturally detail-oriented and endlessly curious, I enjoy digging into data to uncover the stories it has to tell.
-            </p>
+<!-- ABOUT ME -->
+<section id="about" class="animate">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I'm a Master's graduate in Engineering Management from the University of Greenwich, UK. 
+            I also have a Bachelor's in Engineering from APJ Abdul Kalam Technological University, Trivandrum. 
+            I've worked in technical consulting and manufacturing, combining analytical thinking with practical problem-solving. 
+            Naturally detail-oriented and endlessly curious, I enjoy digging into data to uncover the stories it has to tell.
+        </p>
+    </div>
+</section>
+
+<!-- THINGS I ENGAGE IN -->
+<section id="interests" class="animate">
+    <div class="container">
+        <h2>Things I Engage In</h2>
+        <div class="interests-grid">
+            <div class="interest-card"><i class="fas fa-chart-line"></i> Working with data</div>
+            <div class="interest-card"><i class="fas fa-chart-pie"></i> Visualizing data</div>
+            <div class="interest-card"><i class="fas fa-cogs"></i> Exploring SAP</div>
+            <div class="interest-card"><i class="fas fa-utensils"></i> Amateur Chef</div>
+            <div class="interest-card"><i class="fas fa-chart-candlestick"></i> Analyzing markets & trading</div>
+            <div class="interest-card"><i class="fas fa-lightbulb"></i> Learning new skills</div>
+            <div class="interest-card"><i class="fas fa-dragon"></i> Diving into anime & manga</div>
+            <div class="interest-card"><i class="fas fa-gamepad"></i> Unity Game Development</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- THINGS I ENGAGE IN -->
-    <section id="interests" class="animate">
-        <div class="container">
-            <h2>Things I Engage In</h2>
-            <div class="interests-grid">
-                <div class="interest-card"><i class="fas fa-chart-line"></i> Working with data</div>
-                <div class="interest-card"><i class="fas fa-chart-pie"></i> Visualizing data</div>
-                <div class="interest-card"><i class="fas fa-cogs"></i> Exploring SAP</div>
-                <div class="interest-card"><i class="fas fa-utensils"></i> Amateur Chef</div>
-                <div class="interest-card"><i class="fas fa-chart-candlestick"></i> Analyzing markets & trading</div>
-                <div class="interest-card"><i class="fas fa-lightbulb"></i> Learning new skills</div>
-                <div class="interest-card"><i class="fas fa-dragon"></i> Diving into anime & manga</div>
-            </div>
-        </div>
-    </section>
+<!-- SKILLS -->
+<section id="skills" class="animate">
+    <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fas fa-cogs"></i> SAP ABAP</li>
+            <li><i class="fas fa-chart-bar"></i> Power BI</li>
+            <li><i class="fas fa-chart-line"></i> Data Analysis</li>
+            <li><i class="fas fa-chart-pie"></i> Data Visualization</li>
+            <li><i class="fas fa-file-excel"></i> MS Excel</li>
+        </ul>
+    </div>
+</section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="animate">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fab fa-python"></i> Python</li>
-                <li><i class="fas fa-database"></i> SQL</li>
-                <li><i class="fas fa-cogs"></i> SAP ABAP</li>
-                <li><i class="fas fa-chart-bar"></i> Power BI</li>
-                <li><i class="fas fa-chart-line"></i> Data Analysis</li>
-                <li><i class="fas fa-chart-pie"></i> Data Visualization</li>
-                <li><i class="fas fa-file-excel"></i> MS Excel</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
+<!-- PROJECTS -->
 <section id="projects" class="animate">
     <div class="container">
         <h2>Projects</h2>
-
-        <!-- Bellabeat Project Card -->
         <div class="project-card">
             <h3>Bellabeat Data Analysis Project</h3>
             <p>
@@ -100,16 +119,17 @@
         <div class="project-card">
             <h3>Employee Performance Analysis Project</h3>
             <p>
-              This is a foundational practice project where I analysed an AI-generated employee dataset to understand performance over a three-month period.
+                This is a foundational practice project where I analysed an AI-generated employee dataset to understand performance over a three-month period.
                 Used SQL to calculate key metrics such as performance percentage and target achievement status.
                 Created a Power BI dashboard to visualise monthly performance and department-wise insights.
-            <br><strong>Tools Used:</strong> PgAdmin, PostgreSQL, SQL, Power BI, MS Excel
+                <br><strong>Tools Used:</strong> PgAdmin, PostgreSQL, SQL, Power BI, MS Excel
             </p>
             <button class="dashboard-btn performance-btn">View Project Dashboard</button>
-          </div>
+        </div>
+    </div>
 </section>
 
-<!-- POPUP OVERLAY -->
+<!-- POPUPS -->
 <div id="dashboard-popup" class="popup-overlay">
     <div class="popup-content">
         <span class="popup-close">&times;</span>
@@ -123,61 +143,62 @@
     </div>
 </div>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="animate">
-        <div class="container">
-            <h2>Experience</h2>
+<!-- EXPERIENCE -->
+<section id="experience" class="animate">
+    <div class="container">
+        <h2>Experience</h2>
 
-            <div class="job experience-grid">
-    <div class="experience-logo">
-        <img src="assets/capgemini.png" alt="Capgemini logo">
-    </div>
+        <!-- MetaClickData -->
+        <div class="job experience-grid">
+            <div class="experience-logo">
+                <img src="assets/metaclickdata.png" alt="MetaClickData logo" onerror="this.style.display='none'">
+            </div>
+            <div class="experience-content">
+                <h3>MetaClickData Ltd.</h3>
+                <p class="job-role">Data Analyst Trainee | Feb 2025 – Present</p>
+                <ul>
+                    <li>Gained end-to-end exposure to data workflows across multiple client projects, from data ingestion through to dashboard delivery.</li>
+                    <li>Cleaned, validated, and transformed client datasets using Python and Excel, ensuring data was fully accurate and analysis-ready.</li>
+                    <li>Built and delivered Power BI dashboards for multiple clients including an e-commerce business, cutting manual reporting time by 40–60%.</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="experience-content">
-        <h3>Capgemini Technology Services</h3>
-        <p class="job-role">Senior Analyst | Nov 2020 – Dec 2022</p>
-        <ul>
-            <li>Worked hands-on with SAP data, analyzing large datasets to support decision-making.</li>
-            <li>Collaborated with business users to deliver practical solutions.</li>
-            <li>Facilitated cross-team coordination for smooth project delivery.</li>
-            <li>Awarded the ‘Firefighter’ award for proactive problem-solving.</li>
-        </ul>
-    </div>
-</div>
+        <!-- Nutra Direct -->
+        <div class="job experience-grid">
+            <div class="experience-logo">
+                <img src="assets/nutradirect.jpeg" alt="Nutra Direct logo">
+            </div>
+            <div class="experience-content">
+                <h3>Nutra Direct</h3>
+                <p class="job-role">Administrator | Aug 2024 – Oct 2024</p>
+                <ul>
+                    <li>Streamlined inventory tracking and analysis.</li>
+                    <li>Optimized stock processes to improve accuracy.</li>
+                    <li>Maintained organized records and stakeholder coordination.</li>
+                </ul>
+            </div>
+        </div>
 
-            <div class="job experience-grid">
-    <div class="experience-logo">
-        <img src="assets/nutradirect.jpeg" alt="Nutra Direct logo">
-    </div>
+        <!-- Capgemini -->
+        <div class="job experience-grid">
+            <div class="experience-logo">
+                <img src="assets/capgemini.png" alt="Capgemini logo">
+            </div>
+            <div class="experience-content">
+                <h3>Capgemini Technology Services</h3>
+                <p class="job-role">Senior Analyst | Nov 2020 – Dec 2022</p>
+                <ul>
+                    <li>Worked hands-on with SAP data, analyzing large datasets to support decision-making.</li>
+                    <li>Collaborated with business users to deliver practical solutions.</li>
+                    <li>Facilitated cross-team coordination for smooth project delivery.</li>
+                    <li>Awarded the 'Firefighter' award for proactive problem-solving.</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="experience-content">
-        <h3>Nutra Direct</h3>
-        <p class="job-role">Administrator | Aug 2024 – Oct 2024</p>
-        <ul>
-            <li>Streamlined inventory tracking and analysis.</li>
-            <li>Optimized stock processes to improve accuracy.</li>
-            <li>Maintained organized records and stakeholder coordination.</li>
-        </ul>
     </div>
-</div>
-
-           <div class="job experience-grid">
-    <div class="experience-logo">
-        <img src="assets/trading.png" alt="Market chart icon">
-    </div>
-
-    <div class="experience-content">
-        <h3>Independent Trader</h3>
-        <p class="job-role">Jul 2025 – Present</p>
-        <ul>
-            <li>Exploring forex and futures markets using price action.</li>
-            <li>Studying candlestick patterns, indicators, and market structure.</li>
-            <li>Practicing demo trading and strategy refinement.</li>
-            <li>Passed FundingTicks evaluation and earned Certificate of Achievement.</li>
-        </ul>
-    </div>
-</div>
-    </section>
+</section>
 
 <!-- VIRTUAL EXPERIENCE -->
 <section id="virtual-experience" class="animate">
@@ -185,7 +206,6 @@
         <h2>Virtual Experiences / Job Simulations</h2>
         <div class="tiles-grid">
 
-            <!-- Deloitte Tile -->
             <div class="tile">
                 <div class="tile-front deloitte">
                     <img src="assets/deloitte-logo.jpeg" alt="Deloitte Logo" class="tile-logo">
@@ -204,7 +224,6 @@
                 </div>
             </div>
 
-            <!-- Citi Tile -->
             <div class="tile">
                 <div class="tile-front citi">
                     <img src="assets/citi-logo.png" alt="Citi Logo" class="tile-logo">
@@ -275,103 +294,131 @@
     </div>
 </section>
 
-    <!-- VOLUNTEERING -->
-    <section id="volunteering" class="animate">
-        <div class="container">
-            <h2>Volunteering & Community</h2>
+<!-- VOLUNTEERING -->
+<section id="volunteering" class="animate">
+    <div class="container">
+        <h2>Volunteering & Community</h2>
 
-            <div class="volunteer">
-                <img src="assets/nss-logo.png" alt="NSS Logo" class="volunteer-logo">
-                <div class="volunteer-info">
-                    <h3>Student Volunteer | National Service Scheme</h3>
-                    <p><i class="fas fa-calendar-alt"></i> Sep 2016 - Mar 2019 · 2 yrs 7 mos</p>
-                    <p><i class="fas fa-hands-helping"></i> Social Services</p>
-                </div>
-            </div>
-
-            <div class="volunteer">
-                <i class="fas fa-users volunteer-icon"></i>
-                <div class="volunteer-info">
-                    <h3>Member | Women in Cloud</h3>
-                    <p>Supporting women in tech and cloud initiatives.</p>
-                </div>
+        <div class="volunteer">
+            <img src="assets/nss-logo.png" alt="NSS Logo" class="volunteer-logo">
+            <div class="volunteer-info">
+                <h3>Student Volunteer | National Service Scheme</h3>
+                <p><i class="fas fa-calendar-alt"></i> Sep 2016 - Mar 2019 · 2 yrs 7 mos</p>
+                <p><i class="fas fa-hands-helping"></i> Social Services</p>
             </div>
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="animate">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <ul class="contact-list">
-                <li><i class="fas fa-envelope"></i> <a href="mailto:asiyanizam01@gmail.com">asiyanizam01@gmail.com</a></li>
-                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/asiya-nizam-8a0387176/">LinkedIn</a></li>
-                <li><i class="fab fa-github"></i> <a href="https://github.com/asiyanizam01-da">GitHub</a></li>
-            </ul>
+        <div class="volunteer">
+            <i class="fas fa-users volunteer-icon"></i>
+            <div class="volunteer-info">
+                <h3>Member | Women in Cloud</h3>
+                <p>Supporting women in tech and cloud initiatives.</p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>© 2026 Asiya Nizam</p>
-    </footer>
+<!-- CONTACT -->
+<section id="contact" class="animate">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:asiyanizam01@gmail.com">asiyanizam01@gmail.com</a></li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/asiya-nizam-8a0387176/">LinkedIn</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/asiyanizam01-da">GitHub</a></li>
+        </ul>
+    </div>
+</section>
 
-    <script>
-        const animateElements = document.querySelectorAll('.animate');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, { threshold: 0.2 });
+<footer>
+    <p>© 2026 Asiya Nizam</p>
+</footer>
 
-        animateElements.forEach(el => observer.observe(el));
-    </script>
 <script src="assets/js/virtual-cert.js"></script>
-    
- <script>
-    // Bellabeat
-    const dashboardBtn = document.querySelector('.dashboard-btn');
-    const popup = document.getElementById('dashboard-popup');
-    const popupClose = document.querySelector('.popup-close');
 
-    dashboardBtn.addEventListener('click', () => {
-        popup.style.display = 'flex';
+<script>
+// ── Scroll Progress Bar ──
+const progressBar = document.getElementById('scrollProgressBar');
+window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    progressBar.style.width = scrolled + '%';
+});
+
+// ── Navbar scroll shadow ──
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ── Hamburger Menu ──
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
     });
+});
 
-    popupClose.addEventListener('click', () => {
+// ── Dark / Light Mode Toggle ──
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+const html = document.documentElement;
+
+// Load saved preference
+const savedTheme = localStorage.getItem('theme') || 'dark';
+html.setAttribute('data-theme', savedTheme);
+themeIcon.className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+
+themeToggle.addEventListener('click', () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+    localStorage.setItem('theme', newTheme);
+});
+
+// ── Scroll Reveal ──
+const animateElements = document.querySelectorAll('.animate');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, { threshold: 0.1 });
+animateElements.forEach(el => observer.observe(el));
+
+// ── Popup: Bellabeat ──
+const dashboardBtn = document.querySelector('.dashboard-btn');
+const popup = document.getElementById('dashboard-popup');
+const popupClose = document.querySelector('.popup-close');
+
+dashboardBtn.addEventListener('click', () => { popup.style.display = 'flex'; });
+popupClose.addEventListener('click', () => { popup.style.display = 'none'; });
+popup.addEventListener('click', (e) => { if (e.target === popup) popup.style.display = 'none'; });
+
+// ── Popup: Employee Performance ──
+const performanceBtn = document.querySelector('.performance-btn');
+const performancePopup = document.getElementById('performance-popup');
+const performanceClose = document.querySelector('.performance-close');
+
+performanceBtn.addEventListener('click', () => { performancePopup.style.display = 'flex'; });
+performanceClose.addEventListener('click', () => { performancePopup.style.display = 'none'; });
+performancePopup.addEventListener('click', (e) => { if (e.target === performancePopup) performancePopup.style.display = 'none'; });
+
+// ── ESC to close popups ──
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
         popup.style.display = 'none';
-    });
-
-    popup.addEventListener('click', (e) => {
-        if(e.target === popup) popup.style.display = 'none';
-    });
-
-    // Employee Performance
-    const performanceBtn = document.querySelector('.performance-btn');
-    const performancePopup = document.getElementById('performance-popup');
-    const performanceClose = document.querySelector('.performance-close');
-
-    performanceBtn.addEventListener('click', () => {
-        performancePopup.style.display = 'flex';
-    });
-
-    performanceClose.addEventListener('click', () => {
         performancePopup.style.display = 'none';
-    });
-
-    performancePopup.addEventListener('click', (e) => {
-        if(e.target === performancePopup) performancePopup.style.display = 'none';
-    });
+    }
+});
 </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
