@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asiya Nizam</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particleCanvas"></canvas>
 
 <!-- SCROLL PROGRESS BAR -->
 <div class="scroll-progress-bar" id="scrollProgressBar"></div>
@@ -16,14 +19,19 @@
 <!-- NAVBAR -->
 <nav id="navbar">
     <div class="nav-inner">
+        <!-- AN Logo -->
+        <a href="#hero" class="nav-logo" aria-label="Asiya Nizam Home">
+            <span class="logo-text">AN</span>
+            <span class="logo-dot"></span>
+        </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#virtual-experience">Virtual Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#virtual-experience">Virtual Exp.</a></li>
+            <li><a href="#certifications">Certs</a></li>
             <li><a href="#interests">Interests</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -41,7 +49,6 @@
 
 <!-- HERO -->
 <header id="hero" class="animate">
-    <!-- Animated modern background -->
     <div class="hero-bg">
         <div class="hero-grid"></div>
         <div class="hero-orb orb-1"></div>
@@ -50,45 +57,99 @@
     </div>
     <div class="hero-background">
         <div class="container hero-content">
-            <img src="assets/profile.jpg" alt="Asiya Nizam" class="profile-pic">
-            <h1>Hi, I'm Asiya Nizam</h1>
+            <div class="profile-pic-wrapper">
+                <img src="assets/profile.jpg" alt="Asiya Nizam" class="profile-pic">
+                <div class="profile-ring"></div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1>Asiya Nizam</h1>
+                <div class="typewriter-wrapper">
+                    <span class="typewriter-static">— </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="#about" class="btn-primary">About Me</a>
+                    <a href="#contact" class="btn-outline">Get in Touch</a>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
     </div>
 </header>
 
-<!-- ABOUT ME -->
-<section id="about" class="animate">
+<!-- ABOUT ME — compact, visible without scroll -->
+<section id="about" class="animate about-compact">
+    <div class="container about-grid">
+        <div class="about-label">
+            <span class="section-tag">About</span>
+        </div>
+        <div class="about-body">
+            <h2>Turning Data<br><em>into Decisions</em></h2>
+            <p>
+                Master's graduate in Engineering Management from the University of Greenwich, UK, with 3+ years of experience working with complex data. Bachelor's degree from APJ Abdul Kalam Technological University, Trivandrum.
+            </p>
+            <p>
+                Detail-oriented and genuinely passionate about uncovering patterns, solving problems, and translating raw information into clear, impactful stories that drive better decisions.
+            </p>
+            <div class="about-stats">
+                <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Exp.</span></div>
+                <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Tools Mastered</span></div>
+                <div class="stat"><span class="stat-num">2</span><span class="stat-label">Projects</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="animate">
     <div class="container">
-        <h2>About Me</h2>
-        <p>
-            I’m a Master’s graduate in Engineering Management from the University of Greenwich, UK, with over 3 years of experience working with complex data and delivering meaningful insights. I also hold a Bachelor’s degree in Engineering from APJ Abdul Kalam Technological University, Trivandrum.
-            I’m highly detail-oriented, naturally curious, and genuinely passionate about working with data. I enjoy uncovering patterns, solving problems, and turning raw information into clear, impactful stories that drive better decisions. I take pride in my ability to continuously learn, adapt, and bring a positive, analytical mindset to every challenge I work on.
-        </p>
+        <div class="section-header">
+            <span class="section-tag">Toolkit</span>
+            <h2>Skills</h2>
+        </div>
+        <ul class="skills-list">
+            <li class="skill-card"><i class="fas fa-chart-line"></i><span>Data Analysis</span></li>
+            <li class="skill-card"><i class="fas fa-chart-pie"></i><span>Data Visualization</span></li>
+            <li class="skill-card"><img src="assets/excel.jpeg" alt="Excel" style="width:22px;height:22px;border-radius:4px;"><span>MS Excel</span></li>
+            <li class="skill-card"><i class="fas fa-database"></i><span>SQL</span></li>
+            <li class="skill-card"><img src="assets/postgresql.png" alt="PostgreSQL" style="width:22px;height:22px;border-radius:4px;"><span>PostgreSQL</span></li>
+            <li class="skill-card"><img src="assets/python.jpeg" alt="Python" style="width:22px;height:22px;border-radius:4px;"><span>Python</span></li>
+            <li class="skill-card"><img src="assets/vscode.jpeg" alt="VS Code" style="width:22px;height:22px;border-radius:4px;"><span>VS Code</span></li>
+            <li class="skill-card"><img src="assets/powerbi.jpeg" alt="Power BI" style="width:22px;height:22px;border-radius:4px;"><span>Power BI</span></li>
+            <li class="skill-card"><img src="assets/tableau.png" alt="Tableau" style="width:22px;height:22px;border-radius:4px;"><span>Tableau</span></li>
+            <li class="skill-card"><img src="assets/alteryx.png" alt="Alteryx" style="width:22px;height:22px;border-radius:4px;"><span>Alteryx</span></li>
+            <li class="skill-card"><img src="assets/sap-logo.jpeg" alt="SAP" style="width:22px;height:22px;border-radius:4px;"><span>SAP</span></li>
+            <li class="skill-card"><img src="assets/abap.jpg" alt="SAP ABAP" style="width:22px;height:22px;border-radius:4px;"><span>SAP ABAP</span></li>
+        </ul>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="animate">
     <div class="container">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Bellabeat Data Analysis Project</h3>
-            <p>
-                Analysed smart device usage data to understand activity, sleep, and wellness patterns.
-                Insights were applied to inform marketing strategy for Bellabeat products.
-                <br><strong>Tools Used:</strong> MS Excel, Python, VS Code, Power BI
-            </p>
-            <button class="dashboard-btn">View Project Dashboard</button>
+        <div class="section-header">
+            <span class="section-tag">Work</span>
+            <h2>Projects</h2>
         </div>
         <div class="project-card">
-            <h3>Employee Performance Analysis Project</h3>
-            <p>
-                This is a foundational practice project where I analysed an AI-generated employee dataset to understand performance over a three-month period.
-                Used SQL to calculate key metrics such as performance percentage and target achievement status.
-                Created a Power BI dashboard to visualise monthly performance and department-wise insights.
-                <br><strong>Tools Used:</strong> PgAdmin, PostgreSQL, SQL, Power BI, MS Excel
-            </p>
-            <button class="dashboard-btn performance-btn">View Project Dashboard</button>
+            <div class="project-tag">Data Analysis · Marketing</div>
+            <h3>Bellabeat Data Analysis</h3>
+            <p>Analysed smart device usage data to understand activity, sleep, and wellness patterns. Insights were applied to inform marketing strategy for Bellabeat products.</p>
+            <p class="tools-used"><strong>Tools:</strong> MS Excel · Python · VS Code · Power BI</p>
+            <button class="dashboard-btn">View Dashboard →</button>
+        </div>
+        <div class="project-card">
+            <div class="project-tag">SQL · Power BI · HR Analytics</div>
+            <h3>Employee Performance Analysis</h3>
+            <p>Analysed an AI-generated employee dataset to understand performance over a three-month period. Used SQL for key metrics; built Power BI dashboards for monthly and department-wise insights.</p>
+            <p class="tools-used"><strong>Tools:</strong> PgAdmin · PostgreSQL · SQL · Power BI · MS Excel</p>
+            <button class="dashboard-btn performance-btn">View Dashboard →</button>
         </div>
     </div>
 </section>
@@ -107,102 +168,36 @@
     </div>
 </div>
 
-<section id="skills" class="animate">
-    <div class="container">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-
-            <!-- Core Skills -->
-            <li class="skill-card">
-                <i class="fas fa-chart-line"></i>
-                <span>Data Analysis</span>
-            </li>
-            <li class="skill-card">
-                <i class="fas fa-chart-pie"></i>
-                <span>Data Visualization</span>
-            </li>
-
-            <!-- Data Tools -->
-            <li class="skill-card">
-                <img src="assets/excel.jpeg" alt="Microsoft Excel logo" style="width:24px; height:24px;">
-                <span>MS Excel</span>
-            </li>
-            <li class="skill-card">
-                <i class="fas fa-database"></i>
-                <span>SQL</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/postgresql.png" alt="PostgreSQL database logo" style="width:24px; height:24px;">
-                <span>PostgreSQL</span>
-            </li>
-
-            <!-- Programming -->
-            <li class="skill-card">
-                <img src="assets/python.jpeg" alt="Python programming language logo" style="width:24px; height:24px;">
-                <span>Python</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/vscode.jpeg" alt="Visual Studio Code editor logo" style="width:24px; height:24px;">
-                <span>VS Code</span>
-            </li>
-
-            <!-- BI & Analytics Tools -->
-            <li class="skill-card">
-                <img src="assets/powerbi.jpeg" alt="Microsoft Power BI logo" style="width:24px; height:24px;">
-                <span>Power BI</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/tableau.png" alt="Tableau data visualization software logo" style="width:24px; height:24px;">
-                <span>Tableau</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/alteryx.png" alt="Alteryx analytics platform logo" style="width:24px; height:24px;">
-                <span>Alteryx</span>
-            </li>
-
-            <!-- ERP -->
-            <li class="skill-card">
-                <img src="assets/sap-logo.jpeg" alt="SAP enterprise software logo" style="width:24px; height:24px;">
-                <span>SAP</span>
-            </li>
-            <li class="skill-card">
-                <img src="assets/abap.jpg" alt="SAP ABAP programming language logo" style="width:24px; height:24px;">
-                <span>SAP ABAP</span>
-            </li>
-
-        </ul>
-    </div>
-</section>
-
 <!-- EXPERIENCE -->
 <section id="experience" class="animate">
     <div class="container">
-        <h2>Experience</h2>
+        <div class="section-header">
+            <span class="section-tag">Career</span>
+            <h2>Experience</h2>
+        </div>
 
-        <!-- MetaClickData -->
         <div class="job experience-grid">
             <div class="experience-logo">
                 <img src="assets/metaclickdata.png" alt="MetaClickData logo" onerror="this.style.display='none'">
             </div>
             <div class="experience-content">
                 <h3>MetaClickData Ltd.</h3>
-                <p class="job-role">Data Analyst Trainee | Feb 2025 – Present</p>
+                <p class="job-role"><i class="fas fa-circle job-dot"></i> Data Analyst Trainee · Feb 2025 – Present</p>
                 <ul>
                     <li>Gained end-to-end exposure to data workflows across multiple client projects, from data ingestion through to dashboard delivery.</li>
-                    <li>Cleaned, validated, and transformed client datasets using Python and Excel, ensuring data was fully accurate and analysis-ready.</li>
-                    <li>Built and delivered Power BI dashboards for multiple clients including an e-commerce business, cutting manual reporting time by 40–60%.</li>
+                    <li>Cleaned, validated, and transformed client datasets using Python and Excel, ensuring data was accurate and analysis-ready.</li>
+                    <li>Built and delivered Power BI dashboards for multiple clients, cutting manual reporting time by 40–60%.</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Nutra Direct -->
         <div class="job experience-grid">
             <div class="experience-logo">
                 <img src="assets/nutradirect.jpeg" alt="Nutra Direct logo">
             </div>
             <div class="experience-content">
                 <h3>Nutra Direct</h3>
-                <p class="job-role">Administrator | Aug 2024 – Oct 2024</p>
+                <p class="job-role"><i class="fas fa-circle job-dot"></i> Administrator · Aug 2024 – Oct 2024</p>
                 <ul>
                     <li>Streamlined inventory tracking and analysis.</li>
                     <li>Optimized stock processes to improve accuracy.</li>
@@ -211,32 +206,32 @@
             </div>
         </div>
 
-        <!-- Capgemini -->
         <div class="job experience-grid">
             <div class="experience-logo">
                 <img src="assets/capgemini.png" alt="Capgemini logo">
             </div>
             <div class="experience-content">
                 <h3>Capgemini Technology Services</h3>
-                <p class="job-role">Senior Analyst | Nov 2020 – Dec 2022</p>
+                <p class="job-role"><i class="fas fa-circle job-dot"></i> Senior Analyst · Nov 2020 – Dec 2022</p>
                 <ul>
                     <li>Worked hands-on with SAP data, analyzing large datasets to support decision-making.</li>
                     <li>Collaborated with business users to deliver practical solutions.</li>
                     <li>Facilitated cross-team coordination for smooth project delivery.</li>
-                    <li>Awarded the 'Firefighter' award for proactive problem-solving.</li>
+                    <li>Awarded the <em>'Firefighter'</em> award for proactive problem-solving.</li>
                 </ul>
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- VIRTUAL EXPERIENCE -->
 <section id="virtual-experience" class="animate">
     <div class="container">
-        <h2>Virtual Experiences / Job Simulations</h2>
+        <div class="section-header">
+            <span class="section-tag">Simulations</span>
+            <h2>Virtual Experiences</h2>
+        </div>
         <div class="tiles-grid">
-
             <div class="tile">
                 <div class="tile-front deloitte">
                     <img src="assets/deloitte-logo.jpeg" alt="Deloitte Logo" class="tile-logo">
@@ -246,7 +241,7 @@
                         <img src="assets/forage-logo.png" alt="Forage Logo" class="tile-logo-small">
                         <h3>Deloitte Australia – Data Analytics Job Simulation (Forage)</h3>
                         <ul>
-                            <li>Completed a Deloitte job simulation involving data analysis and forensic technology</li>
+                            <li>Completed a job simulation involving data analysis and forensic technology</li>
                             <li>Created a data dashboard using Tableau</li>
                             <li>Used Excel to classify data and draw business conclusions</li>
                         </ul>
@@ -254,7 +249,6 @@
                     <button class="close-tile">Close</button>
                 </div>
             </div>
-
             <div class="tile">
                 <div class="tile-front citi">
                     <img src="assets/citi-logo.png" alt="Citi Logo" class="tile-logo">
@@ -264,16 +258,15 @@
                         <img src="assets/forage-logo.png" alt="Forage Logo" class="tile-logo-small">
                         <h3>Citi – Global Quantitative Analysis (MQA) Job Simulation (Forage)</h3>
                         <ul>
-                            <li>Strengthened understanding of calculus, linear algebra, and stochastic calculus in financial market contexts</li>
-                            <li>Explored commodity pricing models, including coffee futures valuation techniques</li>
-                            <li>Analyzed derivative-based hedging strategies and security structuring methods</li>
-                            <li>Used risk management tools such as VaR and market risk monitoring techniques</li>
+                            <li>Strengthened understanding of calculus, linear algebra, and stochastic calculus</li>
+                            <li>Explored commodity pricing models including coffee futures valuation</li>
+                            <li>Analyzed derivative-based hedging strategies and security structuring</li>
+                            <li>Used risk management tools such as VaR and market risk monitoring</li>
                         </ul>
                     </div>
                     <button class="close-tile">Close</button>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -281,12 +274,14 @@
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="animate">
     <div class="container">
-        <h2>Certifications</h2>
-
+        <div class="section-header">
+            <span class="section-tag">Learning</span>
+            <h2>Certifications</h2>
+        </div>
         <div class="cert-category">
             <div class="cert-header">
                 <img src="assets/google-logo.png" alt="Google Logo" class="cert-logo">
-                <h3>Google Data Analytics Professional Certificate (In Progress)</h3>
+                <h3>Google Data Analytics Professional Certificate <span class="cert-badge">In Progress</span></h3>
                 <button class="toggle-cert">+</button>
             </div>
             <ul class="cert-list">
@@ -296,7 +291,6 @@
                 <li>Process Data from Dirty to Clean</li>
             </ul>
         </div>
-
         <div class="cert-category">
             <div class="cert-header">
                 <img src="assets/microsoft-logo.png" alt="Microsoft Logo" class="cert-logo">
@@ -307,7 +301,6 @@
                 <li>Completed Microsoft & LinkedIn Learning course on Generative AI essentials</li>
             </ul>
         </div>
-
         <div class="cert-category">
             <div class="cert-header">
                 <img src="assets/sap-logo.jpeg" alt="SAP Logo" class="cert-logo">
@@ -321,52 +314,24 @@
                 <li>Key Technical Topics in a System Conversion to SAP S/4HANA</li>
             </ul>
         </div>
-
     </div>
 </section>
 
-<!-- THINGS I ENGAGE IN -->
-
+<!-- INTERESTS -->
 <section id="interests" class="animate">
     <div class="container">
-        <h2>Things I Engage In</h2>
+        <div class="section-header">
+            <span class="section-tag">Life</span>
+            <h2>Things I Engage In</h2>
+        </div>
         <div class="interests-grid">
-
-            <div class="interest-card glass">
-                <i class="fas fa-chart-line"></i>
-                <span>Working with Data</span>
-            </div>
-
-            <div class="interest-card glass">
-                <i class="fas fa-chart-candlestick"></i>
-                <span>Market Analysis & Trading</span>
-            </div>
-
-            <div class="interest-card glass">
-                <i class="fas fa-gamepad"></i>
-                <span>Unity Game Development</span>
-            </div>
-
-            <div class="interest-card glass">
-                <i class="fas fa-code"></i>
-                <span>VS Code & Development</span>
-            </div>
-
-            <div class="interest-card glass">
-                <i class="fas fa-utensils"></i>
-                <span>Amateur Cooking</span>
-            </div>
-
-            <div class="interest-card glass">
-                <i class="fas fa-dragon"></i>
-                <span>Anime & Manga</span>
-            </div>
-
-            <div class="interest-card glass">
-                <i class="fas fa-lightbulb"></i>
-                <span>Learning New Skills</span>
-            </div>
-
+            <div class="interest-card glass"><i class="fas fa-chart-line"></i><span>Working with Data</span></div>
+            <div class="interest-card glass"><i class="fas fa-chart-candlestick"></i><span>Market Analysis & Trading</span></div>
+            <div class="interest-card glass"><i class="fas fa-gamepad"></i><span>Unity Game Development</span></div>
+            <div class="interest-card glass"><i class="fas fa-code"></i><span>VS Code & Development</span></div>
+            <div class="interest-card glass"><i class="fas fa-utensils"></i><span>Amateur Cooking</span></div>
+            <div class="interest-card glass"><i class="fas fa-dragon"></i><span>Anime & Manga</span></div>
+            <div class="interest-card glass"><i class="fas fa-lightbulb"></i><span>Learning New Skills</span></div>
         </div>
     </div>
 </section>
@@ -374,21 +339,22 @@
 <!-- VOLUNTEERING -->
 <section id="volunteering" class="animate">
     <div class="container">
-        <h2>Volunteering & Community</h2>
-
+        <div class="section-header">
+            <span class="section-tag">Community</span>
+            <h2>Volunteering</h2>
+        </div>
         <div class="volunteer">
             <img src="assets/nss-logo.png" alt="NSS Logo" class="volunteer-logo">
             <div class="volunteer-info">
-                <h3>Student Volunteer | National Service Scheme</h3>
-                <p><i class="fas fa-calendar-alt"></i> Sep 2016 - Mar 2019 · 2 yrs 7 mos</p>
+                <h3>Student Volunteer · National Service Scheme</h3>
+                <p><i class="fas fa-calendar-alt"></i> Sep 2016 – Mar 2019 · 2 yrs 7 mos</p>
                 <p><i class="fas fa-hands-helping"></i> Social Services</p>
             </div>
         </div>
-
         <div class="volunteer">
             <i class="fas fa-users volunteer-icon"></i>
             <div class="volunteer-info">
-                <h3>Member | Women in Cloud</h3>
+                <h3>Member · Women in Cloud</h3>
                 <p>Supporting women in tech and cloud initiatives.</p>
             </div>
         </div>
@@ -398,7 +364,10 @@
 <!-- CONTACT -->
 <section id="contact" class="animate">
     <div class="container">
-        <h2>Contact Me</h2>
+        <div class="section-header">
+            <span class="section-tag">Let's Talk</span>
+            <h2>Contact Me</h2>
+        </div>
         <ul class="contact-list">
             <li><i class="fas fa-envelope"></i> <a href="mailto:asiyanizam01@gmail.com">asiyanizam01@gmail.com</a></li>
             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/asiya-nizam-8a0387176/">LinkedIn</a></li>
@@ -408,12 +377,114 @@
 </section>
 
 <footer>
-    <p>© 2026 Asiya Nizam</p>
+    <div class="footer-inner">
+        <span class="footer-logo">AN</span>
+        <p>© 2026 Asiya Nizam · Crafted with intention</p>
+    </div>
 </footer>
 
 <script src="assets/js/virtual-cert.js"></script>
-
 <script>
+// ── Particle Canvas ──
+const canvas = document.getElementById('particleCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+let mouseX = 0, mouseY = 0;
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+class Particle {
+    constructor() { this.reset(); }
+    reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 1.8 + 0.4;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = (Math.random() - 0.5) * 0.4;
+        this.opacity = Math.random() * 0.5 + 0.1;
+        this.pulse = Math.random() * Math.PI * 2;
+    }
+    update() {
+        this.pulse += 0.02;
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+    }
+    draw() {
+        const alpha = this.opacity * (0.7 + 0.3 * Math.sin(this.pulse));
+        const theme = document.documentElement.getAttribute('data-theme');
+        const color = theme === 'light' ? `rgba(0,121,107,${alpha})` : `rgba(32,178,170,${alpha})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.fill();
+    }
+}
+
+// Create particles
+for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+// Draw connecting lines
+function drawConnections() {
+    const theme = document.documentElement.getAttribute('data-theme');
+    for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 100) {
+                const alpha = (1 - dist / 100) * 0.08;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = theme === 'light' ? `rgba(0,121,107,${alpha})` : `rgba(32,178,170,${alpha})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+            }
+        }
+    }
+}
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => { p.update(); p.draw(); });
+    drawConnections();
+    requestAnimationFrame(animate);
+}
+animate();
+
+// ── Typewriter ──
+const roles = ['Data Analyst', 'BI Developer', 'Insight Engineer', 'SQL Specialist', 'Power BI Expert'];
+let roleIndex = 0, charIndex = 0, deleting = false;
+const typeEl = document.getElementById('typewriter');
+
+function typeWriter() {
+    const currentRole = roles[roleIndex];
+    if (!deleting) {
+        typeEl.textContent = currentRole.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentRole.length) {
+            deleting = true;
+            setTimeout(typeWriter, 1800);
+            return;
+        }
+    } else {
+        typeEl.textContent = currentRole.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+            deleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+        }
+    }
+    setTimeout(typeWriter, deleting ? 60 : 90);
+}
+typeWriter();
+
 // ── Scroll Progress Bar ──
 const progressBar = document.getElementById('scrollProgressBar');
 window.addEventListener('scroll', () => {
@@ -421,13 +492,13 @@ window.addEventListener('scroll', () => {
     progressBar.style.width = scrolled + '%';
 });
 
-// ── Navbar scroll shadow ──
+// ── Navbar ──
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ── Hamburger Menu ──
+// ── Hamburger ──
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
@@ -441,12 +512,10 @@ navLinks.querySelectorAll('a').forEach(a => {
     });
 });
 
-// ── Dark / Light Mode Toggle ──
+// ── Theme Toggle ──
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const html = document.documentElement;
-
-// Load saved preference
 const savedTheme = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', savedTheme);
 themeIcon.className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
@@ -462,33 +531,53 @@ themeToggle.addEventListener('click', () => {
 // ── Scroll Reveal ──
 const animateElements = document.querySelectorAll('.animate');
 const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+    entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${i * 0.05}s`;
             entry.target.classList.add('fade-in');
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 animateElements.forEach(el => observer.observe(el));
 
+// ── Stagger skill/interest cards ──
+function staggerCards(selector) {
+    const cards = document.querySelectorAll(selector);
+    const cardObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const parent = entry.target.closest('.skills-list, .interests-grid');
+                if (!parent) return;
+                const siblings = parent.querySelectorAll(selector);
+                siblings.forEach((card, i) => {
+                    card.style.transitionDelay = `${i * 0.07}s`;
+                    card.classList.add('card-in');
+                });
+                cardObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    if (cards.length) cardObserver.observe(cards[0]);
+}
+staggerCards('.skill-card');
+staggerCards('.interest-card');
+
 // ── Popup: Bellabeat ──
-const dashboardBtn = document.querySelector('.dashboard-btn');
+const dashboardBtn = document.querySelector('.dashboard-btn:not(.performance-btn)');
 const popup = document.getElementById('dashboard-popup');
 const popupClose = document.querySelector('.popup-close');
-
 dashboardBtn.addEventListener('click', () => { popup.style.display = 'flex'; });
 popupClose.addEventListener('click', () => { popup.style.display = 'none'; });
 popup.addEventListener('click', (e) => { if (e.target === popup) popup.style.display = 'none'; });
 
-// ── Popup: Employee Performance ──
+// ── Popup: Performance ──
 const performanceBtn = document.querySelector('.performance-btn');
 const performancePopup = document.getElementById('performance-popup');
 const performanceClose = document.querySelector('.performance-close');
-
 performanceBtn.addEventListener('click', () => { performancePopup.style.display = 'flex'; });
 performanceClose.addEventListener('click', () => { performancePopup.style.display = 'none'; });
 performancePopup.addEventListener('click', (e) => { if (e.target === performancePopup) performancePopup.style.display = 'none'; });
 
-// ── ESC to close popups ──
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         popup.style.display = 'none';
@@ -496,6 +585,5 @@ document.addEventListener('keydown', e => {
     }
 });
 </script>
-
 </body>
 </html>
