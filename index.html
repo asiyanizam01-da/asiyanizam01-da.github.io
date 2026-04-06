@@ -163,8 +163,8 @@
                 <li class="skill-card"><img src="assets/powerbi.jpeg" alt="Power BI" style="width:22px;height:22px;border-radius:4px;"><span>Power BI</span></li>
                 <li class="skill-card"><img src="assets/tableau.png" alt="Tableau" style="width:22px;height:22px;border-radius:4px;"><span>Tableau</span></li>
                 <li class="skill-card"><img src="assets/alteryx.png" alt="Alteryx" style="width:22px;height:22px;border-radius:4px;"><span>Alteryx</span></li>
-                <li class="skill-card"><img src="assets/databricks.png" alt="Alteryx" style="width:22px;height:22px;border-radius:4px;"></i><span>Databricks</span></li>
-                <li class="skill-card"><img src="assets/looker.png" alt="Alteryx" style="width:22px;height:22px;border-radius:4px;"><span>Looker</span></li>
+                <li class="skill-card"><img src="assets/databricks.png" alt="Databricks" style="width:22px;height:22px;border-radius:4px;"><span>Databricks</span></li>
+                <li class="skill-card"><img src="assets/looker.png" alt="Looker" style="width:22px;height:22px;border-radius:4px;"><span>Looker</span></li>
             </ul>
         </div>
     </div>
@@ -199,7 +199,7 @@
     </div>
 </section>
 
-<!-- POPUPS -->
+<!-- PROJECT POPUPS -->
 <div id="dashboard-popup" class="popup-overlay">
     <div class="popup-content">
         <span class="popup-close">&times;</span>
@@ -280,8 +280,8 @@
                         </div>
                         <ul class="exp-back-list">
                             <li>Streamlined inventory tracking and analysis.</li>
-                            <li>Optimized stock processes to improve accuracy.</li>
-                            <li>Maintained organized records and stakeholder coordination.</li>
+                            <li>Optimised stock processes to improve accuracy.</li>
+                            <li>Maintained organised records and stakeholder coordination.</li>
                         </ul>
                         <button class="exp-close-btn">Close ✕</button>
                     </div>
@@ -359,7 +359,7 @@
                             <ul>
                                 <li>Strengthened understanding of calculus, linear algebra, and stochastic calculus</li>
                                 <li>Explored commodity pricing models including coffee futures valuation</li>
-                                <li>Analyzed derivative-based hedging strategies and security structuring</li>
+                                <li>Analysed derivative-based hedging strategies and security structuring</li>
                                 <li>Used risk management tools such as VaR and market risk monitoring</li>
                             </ul>
                         </div>
@@ -371,7 +371,9 @@
     </div>
 </section>
 
-<!-- CERTIFICATIONS — Timeline design -->
+<!-- =============================================
+     CERTIFICATIONS — Horizontal Flowing Carousel
+     ============================================= -->
 <section id="certifications" class="animate collapsible-section">
     <div class="container">
         <div class="section-toggle-header" data-target="certs-body">
@@ -382,134 +384,178 @@
             <button class="section-toggle-btn" aria-label="Toggle section"><i class="fas fa-chevron-down"></i></button>
         </div>
         <div class="section-body" id="certs-body">
-            <div class="cert-timeline">
 
-                <!-- Cert 1: Google -->
-                <div class="cert-node" data-cert="0">
-                    <div class="cert-dot-wrap">
-                        <div class="cert-dot">
-                            <img src="assets/google-logo.png" alt="Google" class="cert-dot-logo">
+            <!-- Horizontal track -->
+            <div class="cert-carousel-wrapper">
+                <!-- Scroll hint arrows -->
+                <button class="cert-arrow cert-arrow-left" id="certArrowLeft" aria-label="Scroll left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="cert-arrow cert-arrow-right" id="certArrowRight" aria-label="Scroll right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="cert-track-outer" id="certTrack">
+                    <div class="cert-track-inner">
+
+                        <!-- ── Cert 1: Google ── -->
+                        <div class="cert-chip" data-cert-id="cert-google">
+                            <div class="cert-chip-logo-wrap">
+                                <img src="assets/google-logo.png" alt="Google" class="cert-chip-logo">
+                            </div>
+                            <div class="cert-chip-text">
+                                <span class="cert-chip-issuer">Google · Coursera</span>
+                                <span class="cert-chip-name">Data Analytics Professional Certificate</span>
+                            </div>
+                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
                         </div>
-                        <div class="cert-line"></div>
-                    </div>
-                    <div class="cert-card" id="cert-card-0">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title-row">
+
+                        <!-- ── Cert 2: Alteryx ── -->
+                        <div class="cert-chip" data-cert-id="cert-alteryx">
+                            <div class="cert-chip-logo-wrap">
+                                <img src="assets/alteryx.png" alt="Alteryx" class="cert-chip-logo">
+                            </div>
+                            <div class="cert-chip-text">
+                                <span class="cert-chip-issuer">Alteryx</span>
+                                <span class="cert-chip-name">Essentials Certification</span>
+                            </div>
+                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+
+                        <!-- ── Cert 3: Databricks ── -->
+                        <div class="cert-chip" data-cert-id="cert-databricks">
+                            <div class="cert-chip-logo-wrap cert-chip-logo-icon">
+                                <img src="assets/databricks.png" alt="Databricks" class="cert-chip-logo">
+                            </div>
+                            <div class="cert-chip-text">
+                                <span class="cert-chip-issuer">Databricks</span>
+                                <span class="cert-chip-name">Fundamentals Accreditation</span>
+                            </div>
+                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+
+                        <!-- ── Cert 4: Microsoft / LinkedIn ── -->
+                        <div class="cert-chip" data-cert-id="cert-microsoft">
+                            <div class="cert-chip-logo-wrap">
+                                <img src="assets/microsoft.png" alt="Microsoft" class="cert-chip-logo">
+                            </div>
+                            <div class="cert-chip-text">
+                                <span class="cert-chip-issuer">Microsoft &amp; LinkedIn Learning</span>
+                                <span class="cert-chip-name">Career Essentials in Generative AI</span>
+                            </div>
+                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+
+                    </div><!-- /.cert-track-inner -->
+                </div><!-- /.cert-track-outer -->
+            </div><!-- /.cert-carousel-wrapper -->
+
+            <!-- Detail panels (shown below track when a chip is active) -->
+            <div class="cert-detail-panels">
+
+                <!-- Google detail -->
+                <div class="cert-detail-panel" id="cert-google">
+                    <div class="cert-detail-inner">
+                        <div class="cert-detail-header">
+                            <img src="assets/google-logo.png" alt="Google" class="cert-detail-logo">
+                            <div>
                                 <h3>Google Data Analytics Professional Certificate</h3>
-                                <span class="cert-status-badge cert-complete">Completed</span>
+                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Google · Coursera</p>
                             </div>
-                            <p class="cert-issuer"><i class="fas fa-building"></i> Google · Coursera</p>
-                            <button class="cert-expand-btn" data-target="cert-details-0">
-                                <span class="cert-expand-label">Show Modules</span>
-                                <i class="fas fa-chevron-down cert-expand-icon"></i>
-                            </button>
+                            <span class="cert-status-badge cert-complete">Completed</span>
                         </div>
-                        <div class="cert-details" id="cert-details-0">
-                            <ul class="cert-modules">
-                                <li><i class="fas fa-check-circle"></i> Foundations: Data, Data, Everywhere</li>
-                                <li><i class="fas fa-check-circle"></i> Ask Questions to Make Data-Driven Decisions</li>
-                                <li><i class="fas fa-check-circle"></i> Prepare Data for Exploration</li>
-                                <li><i class="fas fa-check-circle"></i> Process Data from Dirty to Clean</li>
-                                <li><i class="fas fa-check-circle"></i> Analyse Data to Answer Questions</li>
-                                <li><i class="fas fa-check-circle"></i> Share Data Through the Art of Visualisation</li>
-                                <li><i class="fas fa-check-circle"></i> Introduction to Data Analysis using Python</li>
-                                <li><i class="fas fa-check-circle"></i> Google Data Analytics Capstone: Complete a Case Study</li>
-                            </ul>
-                            <a href="#" class="cert-view-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Certificate</a>
-                        </div>
+                        <ul class="cert-modules">
+                            <li><i class="fas fa-check-circle"></i> Foundations: Data, Data, Everywhere</li>
+                            <li><i class="fas fa-check-circle"></i> Ask Questions to Make Data-Driven Decisions</li>
+                            <li><i class="fas fa-check-circle"></i> Prepare Data for Exploration</li>
+                            <li><i class="fas fa-check-circle"></i> Process Data from Dirty to Clean</li>
+                            <li><i class="fas fa-check-circle"></i> Analyse Data to Answer Questions</li>
+                            <li><i class="fas fa-check-circle"></i> Share Data Through the Art of Visualisation</li>
+                            <li><i class="fas fa-check-circle"></i> Introduction to Data Analysis using Python</li>
+                            <li><i class="fas fa-check-circle"></i> Google Data Analytics Capstone: Complete a Case Study</li>
+                        </ul>
+                        <button class="cert-view-btn" data-cert-asset="assets/google-cert.pdf" data-cert-type="pdf">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
                     </div>
                 </div>
 
-                <!-- Cert 2: Alteryx -->
-                <div class="cert-node" data-cert="1">
-                    <div class="cert-dot-wrap">
-                        <div class="cert-dot">
-                            <img src="assets/alteryx.png" alt="Alteryx" class="cert-dot-logo">
-                        </div>
-                        <div class="cert-line"></div>
-                    </div>
-                    <div class="cert-card" id="cert-card-1">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title-row">
+                <!-- Alteryx detail -->
+                <div class="cert-detail-panel" id="cert-alteryx">
+                    <div class="cert-detail-inner">
+                        <div class="cert-detail-header">
+                            <img src="assets/alteryx.png" alt="Alteryx" class="cert-detail-logo">
+                            <div>
                                 <h3>Alteryx Essentials Certification</h3>
-                                <span class="cert-status-badge cert-complete">Completed</span>
+                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Alteryx</p>
                             </div>
-                            <p class="cert-issuer"><i class="fas fa-building"></i> Alteryx</p>
-                            <button class="cert-expand-btn" data-target="cert-details-1">
-                                <span class="cert-expand-label">Show Details</span>
-                                <i class="fas fa-chevron-down cert-expand-icon"></i>
-                            </button>
+                            <span class="cert-status-badge cert-complete">Completed</span>
                         </div>
-                        <div class="cert-details" id="cert-details-1">
-                            <ul class="cert-modules">
-                                <li><i class="fas fa-check-circle"></i> Completed Alteryx Essentials certification covering core data preparation and blending workflows</li>
-                            </ul>
-                            <a href="#" class="cert-view-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Certificate</a>
-                        </div>
+                        <ul class="cert-modules">
+                            <li><i class="fas fa-check-circle"></i> Completed Alteryx Essentials certification covering core data preparation and blending workflows</li>
+                        </ul>
+                        <button class="cert-view-btn" data-cert-asset="assets/alteryx-cert.pdf" data-cert-type="pdf">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
                     </div>
                 </div>
 
-                <!-- Cert 3: Databricks -->
-                <div class="cert-node" data-cert="2">
-                    <div class="cert-dot-wrap">
-                        <div class="cert-dot">
-                            <i class="fas fa-cubes cert-dot-icon"></i>
-                        </div>
-                        <div class="cert-line"></div>
-                    </div>
-                    <div class="cert-card" id="cert-card-2">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title-row">
+                <!-- Databricks detail -->
+                <div class="cert-detail-panel" id="cert-databricks">
+                    <div class="cert-detail-inner">
+                        <div class="cert-detail-header">
+                            <img src="assets/databricks.png" alt="Databricks" class="cert-detail-logo">
+                            <div>
                                 <h3>Databricks Fundamentals Accreditation</h3>
-                                <span class="cert-status-badge cert-complete">Completed</span>
+                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Databricks</p>
                             </div>
-                            <p class="cert-issuer"><i class="fas fa-building"></i> Databricks</p>
-                            <button class="cert-expand-btn" data-target="cert-details-2">
-                                <span class="cert-expand-label">Show Details</span>
-                                <i class="fas fa-chevron-down cert-expand-icon"></i>
-                            </button>
+                            <span class="cert-status-badge cert-complete">Completed</span>
                         </div>
-                        <div class="cert-details" id="cert-details-2">
-                            <ul class="cert-modules">
-                                <li><i class="fas fa-check-circle"></i> Completed Databricks Fundamentals Accreditation covering the Lakehouse Platform and core data engineering concepts</li>
-                            </ul>
-                            <a href="#" class="cert-view-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Certificate</a>
-                        </div>
+                        <ul class="cert-modules">
+                            <li><i class="fas fa-check-circle"></i> Completed Databricks Fundamentals Accreditation covering the Lakehouse Platform and core data engineering concepts</li>
+                        </ul>
+                        <button class="cert-view-btn" data-cert-asset="assets/databricks-cert.pdf" data-cert-type="pdf">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
                     </div>
                 </div>
 
-                <!-- Cert 4: Microsoft/LinkedIn -->
-                <div class="cert-node last-node" data-cert="3">
-                    <div class="cert-dot-wrap">
-                        <div class="cert-dot">
-                            <img src="assets/microsoft-logo.png" alt="Microsoft" class="cert-dot-logo">
-                        </div>
-                    </div>
-                    <div class="cert-card" id="cert-card-3">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title-row">
+                <!-- Microsoft detail -->
+                <div class="cert-detail-panel" id="cert-microsoft">
+                    <div class="cert-detail-inner">
+                        <div class="cert-detail-header">
+                            <img src="assets/microsoft.png" alt="Microsoft" class="cert-detail-logo">
+                            <div>
                                 <h3>Career Essentials in Generative AI</h3>
-                                <span class="cert-status-badge cert-complete">Completed</span>
+                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Microsoft &amp; LinkedIn Learning</p>
                             </div>
-                            <p class="cert-issuer"><i class="fas fa-building"></i> Microsoft &amp; LinkedIn Learning</p>
-                            <button class="cert-expand-btn" data-target="cert-details-3">
-                                <span class="cert-expand-label">Show Details</span>
-                                <i class="fas fa-chevron-down cert-expand-icon"></i>
-                            </button>
+                            <span class="cert-status-badge cert-complete">Completed</span>
                         </div>
-                        <div class="cert-details" id="cert-details-3">
-                            <ul class="cert-modules">
-                                <li><i class="fas fa-check-circle"></i> Completed Microsoft &amp; LinkedIn Learning course on Generative AI essentials</li>
-                            </ul>
-                            <a href="#" class="cert-view-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Certificate</a>
-                        </div>
+                        <ul class="cert-modules">
+                            <li><i class="fas fa-check-circle"></i> Completed Microsoft &amp; LinkedIn Learning course on Generative AI essentials</li>
+                        </ul>
+                        <button class="cert-view-btn" data-cert-asset="assets/microsoft-cert.pdf" data-cert-type="pdf">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
                     </div>
                 </div>
 
-            </div><!-- /.cert-timeline -->
-        </div>
+            </div><!-- /.cert-detail-panels -->
+
+        </div><!-- /.section-body -->
     </div>
 </section>
+
+<!-- CERTIFICATE POPUP OVERLAY -->
+<div id="cert-popup" class="popup-overlay">
+    <div class="popup-content cert-popup-content">
+        <span class="popup-close cert-popup-close">&times;</span>
+        <!-- PDF viewer -->
+        <iframe id="cert-popup-iframe" src="" title="Certificate" style="display:none; width:100%; height:80vh; border:none; border-radius:10px;"></iframe>
+        <!-- Image viewer -->
+        <img id="cert-popup-img" src="" alt="Certificate" style="display:none; width:100%; object-fit:contain; max-height:80vh; border-radius:10px;">
+    </div>
+</div>
 
 <!-- INTERESTS -->
 <section id="interests" class="animate collapsible-section">
@@ -590,27 +636,23 @@
 // ── Custom Cursor ──
 const cursorDot  = document.getElementById('cursorDot');
 const cursorRing = document.getElementById('cursorRing');
-let ringX = 0, ringY = 0;
-let ringTargetX = 0, ringTargetY = 0;
+let ringX = 0, ringY = 0, ringTargetX = 0, ringTargetY = 0;
 
 document.addEventListener('mousemove', e => {
     cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
     ringTargetX = e.clientX;
     ringTargetY = e.clientY;
 });
-
 (function lerpRing() {
     ringX += (ringTargetX - ringX) * 0.12;
     ringY += (ringTargetY - ringY) * 0.12;
     cursorRing.style.transform = `translate(${ringX}px, ${ringY}px)`;
     requestAnimationFrame(lerpRing);
 })();
-
-document.querySelectorAll('a, button, .skill-card, .interest-card, .project-card, .job, .section-toggle-header, .tile, .cert-header, .volunteer, .exp-tile, .cert-node').forEach(el => {
+document.querySelectorAll('a, button, .skill-card, .interest-card, .project-card, .job, .section-toggle-header, .tile, .cert-chip, .cert-view-btn, .volunteer, .exp-tile, .cert-node').forEach(el => {
     el.addEventListener('mouseenter', () => { cursorRing.classList.add('ring-hover'); cursorDot.classList.add('dot-hover'); });
     el.addEventListener('mouseleave', () => { cursorRing.classList.remove('ring-hover'); cursorDot.classList.remove('dot-hover'); });
 });
-
 document.addEventListener('mouseleave', () => { cursorDot.style.opacity='0'; cursorRing.style.opacity='0'; });
 document.addEventListener('mouseenter', () => { cursorDot.style.opacity='1'; cursorRing.style.opacity='1'; });
 
@@ -619,10 +661,8 @@ document.querySelectorAll('.section-toggle-header').forEach(header => {
     const targetId = header.getAttribute('data-target');
     const body = document.getElementById(targetId);
     const btn  = header.querySelector('.section-toggle-btn');
-
     body.classList.add('collapsed');
     btn.querySelector('i').style.transform = 'rotate(-90deg)';
-
     header.addEventListener('click', () => {
         const isCollapsed = body.classList.contains('collapsed');
         body.classList.toggle('collapsed', !isCollapsed);
@@ -668,7 +708,7 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
-// ── Stagger cards on first reveal ──
+// ── Stagger cards ──
 function staggerCards(selector, parentSel) {
     const first = document.querySelector(selector);
     if (!first) return;
@@ -690,81 +730,138 @@ staggerCards('.skill-card', '.skills-list');
 staggerCards('.interest-card', '.interests-grid');
 
 // ── Project Popups ──
-const dashBtn    = document.querySelector('.dashboard-btn:not(.performance-btn)');
-const popup      = document.getElementById('dashboard-popup');
-const popClose   = document.querySelector('.popup-close');
+const dashBtn  = document.querySelector('.dashboard-btn:not(.performance-btn)');
+const popup    = document.getElementById('dashboard-popup');
+const popClose = document.querySelector('.popup-close:not(.cert-popup-close):not(.performance-close)');
 dashBtn.addEventListener('click',  () => { popup.style.display = 'flex'; });
 popClose.addEventListener('click', () => { popup.style.display = 'none'; });
 popup.addEventListener('click', e => { if (e.target === popup) popup.style.display = 'none'; });
 
-const perfBtn    = document.querySelector('.performance-btn');
-const perfPopup  = document.getElementById('performance-popup');
-const perfClose  = document.querySelector('.performance-close');
+const perfBtn   = document.querySelector('.performance-btn');
+const perfPopup = document.getElementById('performance-popup');
+const perfClose = document.querySelector('.performance-close');
 perfBtn.addEventListener('click',   () => { perfPopup.style.display = 'flex'; });
 perfClose.addEventListener('click', () => { perfPopup.style.display = 'none'; });
 perfPopup.addEventListener('click', e => { if (e.target === perfPopup) perfPopup.style.display = 'none'; });
 
+// ── Certificate Popup ──
+const certPopup      = document.getElementById('cert-popup');
+const certPopupClose = document.querySelector('.cert-popup-close');
+const certPopupIframe = document.getElementById('cert-popup-iframe');
+const certPopupImg   = document.getElementById('cert-popup-img');
+
+function openCertPopup(asset, type) {
+    certPopupIframe.style.display = 'none';
+    certPopupImg.style.display    = 'none';
+    if (type === 'pdf') {
+        certPopupIframe.src = asset;
+        certPopupIframe.style.display = 'block';
+    } else {
+        certPopupImg.src = asset;
+        certPopupImg.style.display = 'block';
+    }
+    certPopup.style.display = 'flex';
+}
+function closeCertPopup() {
+    certPopup.style.display = 'none';
+    certPopupIframe.src = '';
+    certPopupImg.src    = '';
+}
+certPopupClose.addEventListener('click', closeCertPopup);
+certPopup.addEventListener('click', e => { if (e.target === certPopup) closeCertPopup(); });
+
+document.querySelectorAll('.cert-view-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const asset = btn.getAttribute('data-cert-asset');
+        const type  = btn.getAttribute('data-cert-type') || 'image';
+        openCertPopup(asset, type);
+    });
+});
+
+// ── Escape closes all popups ──
 document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { popup.style.display = 'none'; perfPopup.style.display = 'none'; }
+    if (e.key === 'Escape') {
+        popup.style.display     = 'none';
+        perfPopup.style.display = 'none';
+        closeCertPopup();
+    }
 });
 
 // ── Experience Tiles ──
 document.querySelectorAll('.exp-tile').forEach(tile => {
-    const front = tile.querySelector('.exp-tile-front');
-    const closeBtn = tile.querySelector('.exp-close-btn');
-
-    front.addEventListener('click', () => {
-        // Close any other open tiles
-        document.querySelectorAll('.exp-tile.flipped').forEach(t => {
-            if (t !== tile) t.classList.remove('flipped');
-        });
+    tile.querySelector('.exp-tile-front').addEventListener('click', () => {
+        document.querySelectorAll('.exp-tile.flipped').forEach(t => { if (t !== tile) t.classList.remove('flipped'); });
         tile.classList.toggle('flipped');
     });
-
-    closeBtn.addEventListener('click', (e) => {
+    tile.querySelector('.exp-close-btn').addEventListener('click', e => {
         e.stopPropagation();
         tile.classList.remove('flipped');
     });
 });
 
-// ── Certification Timeline expand/collapse ──
-document.querySelectorAll('.cert-expand-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const targetId = btn.getAttribute('data-target');
-        const details = document.getElementById(targetId);
-        const icon = btn.querySelector('.cert-expand-icon');
-        const label = btn.querySelector('.cert-expand-label');
-        const isOpen = details.classList.contains('cert-open');
+// ── Certification Carousel ──
+(function() {
+    const track      = document.getElementById('certTrack');
+    const chips      = document.querySelectorAll('.cert-chip');
+    const panels     = document.querySelectorAll('.cert-detail-panel');
+    const arrowLeft  = document.getElementById('certArrowLeft');
+    const arrowRight = document.getElementById('certArrowRight');
+    let activeChip   = null;
 
-        details.classList.toggle('cert-open', !isOpen);
-        icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
-        label.textContent = isOpen ? 'Show Details' : 'Hide Details';
-        if (label.textContent === 'Show Details' && btn.closest('.cert-card').querySelector('h3').textContent.includes('Google')) {
-            label.textContent = isOpen ? 'Show Modules' : 'Hide Modules';
-        }
-    });
-    // fix initial label for google cert
-    const targetId = btn.getAttribute('data-target');
-    if (targetId === 'cert-details-0') {
-        btn.querySelector('.cert-expand-label').textContent = 'Show Modules';
+    function closeAllPanels() {
+        panels.forEach(p => p.classList.remove('cert-panel-open'));
+        chips.forEach(c => c.classList.remove('cert-chip-active'));
     }
-});
 
-// ── Stagger cert nodes on reveal ──
-const certObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            document.querySelectorAll('.cert-node').forEach((node, i) => {
-                node.style.transitionDelay = `${i * 0.15}s`;
-                node.classList.add('cert-visible');
-            });
-            certObserver.disconnect();
-        }
+    chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            const targetId = chip.getAttribute('data-cert-id');
+            const panel    = document.getElementById(targetId);
+            const isOpen   = chip.classList.contains('cert-chip-active');
+
+            closeAllPanels();
+
+            if (!isOpen) {
+                chip.classList.add('cert-chip-active');
+                panel.classList.add('cert-panel-open');
+                // Scroll panel into view smoothly
+                setTimeout(() => {
+                    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 60);
+            }
+        });
     });
-}, { threshold: 0.05 });
-const certTimeline = document.querySelector('.cert-timeline');
-if (certTimeline) certObserver.observe(certTimeline);
+
+    // Arrow scrolling
+    arrowLeft.addEventListener('click', () => { track.scrollBy({ left: -260, behavior: 'smooth' }); });
+    arrowRight.addEventListener('click', () => { track.scrollBy({ left: 260, behavior: 'smooth' }); });
+
+    // Show/hide arrows based on scroll position
+    function updateArrows() {
+        arrowLeft.style.opacity  = track.scrollLeft > 10 ? '1' : '0.3';
+        arrowLeft.style.pointerEvents = track.scrollLeft > 10 ? 'auto' : 'none';
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        arrowRight.style.opacity  = track.scrollLeft < maxScroll - 10 ? '1' : '0.3';
+        arrowRight.style.pointerEvents = track.scrollLeft < maxScroll - 10 ? 'auto' : 'none';
+    }
+    track.addEventListener('scroll', updateArrows);
+    updateArrows();
+
+    // Stagger chip reveal
+    const certSectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                chips.forEach((chip, i) => {
+                    chip.style.transitionDelay = `${i * 0.1}s`;
+                    chip.classList.add('cert-chip-visible');
+                });
+                certSectionObserver.disconnect();
+            }
+        });
+    }, { threshold: 0.05 });
+    const certTrackOuter = document.querySelector('.cert-track-outer');
+    if (certTrackOuter) certSectionObserver.observe(certTrackOuter);
+})();
 </script>
 </body>
 </html>
