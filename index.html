@@ -133,7 +133,7 @@
                 <div class="about-stats">
                     <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Exp.</span></div>
                     <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Tools Mastered</span></div>
-                    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Projects</span></div>
+                    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Projects</span></div>
                     <div class="stat"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
                 </div>
             </div>
@@ -182,6 +182,16 @@
         </div>
         <div class="section-body" id="projects-body">
             <div class="project-card">
+                <div class="project-tag">Power BI · DAX · Telecom Analytics</div>
+                <h3>Databel Telecom — Customer Churn Analysis</h3>
+                <p>Analysed customer churn for a fictional telecom company (Databel) to uncover high-risk segments, key churn drivers, and actionable retention strategies across demographics, contracts, payment methods, and service plans.</p>
+                <p class="tools-used"><strong>Tools:</strong> Power BI · Power Query · DAX · MS Excel</p>
+                <div class="project-card-actions">
+                    <button class="dashboard-btn churn-btn">View Dashboard →</button>
+                    <a href="https://github.com/asiyanizam01-da" target="_blank" class="dashboard-btn github-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
                 <div class="project-tag">Data Analysis · Marketing</div>
                 <h3>Bellabeat Data Analysis</h3>
                 <p>Analysed smart device usage data to understand activity, sleep, and wellness patterns. Insights were applied to inform marketing strategy for Bellabeat products.</p>
@@ -212,8 +222,70 @@
         <img src="assets/employee_performance_dashboard.png" alt="Employee Performance Dashboard">
     </div>
 </div>
+<div id="churn-popup" class="popup-overlay">
+    <div class="popup-content churn-popup-content">
+        <span class="popup-close churn-close">&times;</span>
+        <div class="churn-popup-inner">
+            <div class="churn-popup-header">
+                <h3><i class="fas fa-chart-line"></i> Databel Telecom — Customer Churn Analysis</h3>
+                <p>5-page Power BI Dashboard · DataCamp Project</p>
+            </div>
+            <div class="churn-pages-grid">
+                <div class="churn-page-item">
+                    <div class="churn-page-num">01</div>
+                    <div class="churn-page-info">
+                        <span class="churn-page-title">Overview</span>
+                        <span class="churn-page-desc">KPI cards, churn reasons, state map</span>
+                    </div>
+                    <img src="assets/page1_overview.png" alt="Overview" class="churn-page-img" onerror="this.style.display='none'">
+                </div>
+                <div class="churn-page-item">
+                    <div class="churn-page-num">02</div>
+                    <div class="churn-page-info">
+                        <span class="churn-page-title">Customer Demographics</span>
+                        <span class="churn-page-desc">Age bins, group plan, account length slicer</span>
+                    </div>
+                    <img src="assets/page2_demographics.png" alt="Demographics" class="churn-page-img" onerror="this.style.display='none'">
+                </div>
+                <div class="churn-page-item">
+                    <div class="churn-page-num">03</div>
+                    <div class="churn-page-info">
+                        <span class="churn-page-title">Payment & Contracts</span>
+                        <span class="churn-page-desc">Payment methods, contract type trends</span>
+                    </div>
+                    <img src="assets/page3_payments_contracts.png" alt="Contracts" class="churn-page-img" onerror="this.style.display='none'">
+                </div>
+                <div class="churn-page-item">
+                    <div class="churn-page-num">04</div>
+                    <div class="churn-page-info">
+                        <span class="churn-page-title">Charges & Plans</span>
+                        <span class="churn-page-desc">Intl plans, unlimited plans, data consumption</span>
+                    </div>
+                    <img src="assets/page4_charges_plans.png" alt="Charges" class="churn-page-img" onerror="this.style.display='none'">
+                </div>
+                <div class="churn-page-item">
+                    <div class="churn-page-num">05</div>
+                    <div class="churn-page-info">
+                        <span class="churn-page-title">Customer Service Calls</span>
+                        <span class="churn-page-desc">Service call frequency, geographic breakdown</span>
+                    </div>
+                    <img src="assets/page5_customer_service.png" alt="Calls" class="churn-page-img" onerror="this.style.display='none'">
+                </div>
+            </div>
+            <div class="churn-popup-footer">
+                <div class="churn-stats">
+                    <span class="churn-stat"><strong>26.86%</strong> Overall Churn Rate</span>
+                    <span class="churn-stat"><strong>63.24%</strong> California (Highest)</span>
+                    <span class="churn-stat"><strong>~45%</strong> Competitor-Driven Churn</span>
+                    <span class="churn-stat"><strong>11</strong> Recommendations</span>
+                </div>
+                <a href="https://github.com/asiyanizam01-da" target="_blank" class="churn-github-link"><i class="fab fa-github"></i> View Full Project on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!-- EXPERIENCE — Tiles format, oldest to latest -->
+<!-- EXPERIENCE -->
 <section id="experience" class="animate collapsible-section">
     <div class="container">
         <div class="section-toggle-header" data-target="experience-body">
@@ -225,8 +297,6 @@
         </div>
         <div class="section-body" id="experience-body">
             <div class="exp-tiles-grid">
-
-                <!-- Capgemini (oldest) -->
                 <div class="exp-tile" data-index="0">
                     <div class="exp-tile-front">
                         <div class="exp-tile-logo-wrap">
@@ -256,8 +326,6 @@
                         <button class="exp-close-btn">Close ✕</button>
                     </div>
                 </div>
-
-                <!-- Nutra Direct -->
                 <div class="exp-tile" data-index="1">
                     <div class="exp-tile-front">
                         <div class="exp-tile-logo-wrap">
@@ -286,8 +354,6 @@
                         <button class="exp-close-btn">Close ✕</button>
                     </div>
                 </div>
-
-                <!-- MetaClickData (latest) -->
                 <div class="exp-tile" data-index="2">
                     <div class="exp-tile-front">
                         <div class="exp-tile-logo-wrap">
@@ -317,7 +383,6 @@
                         <button class="exp-close-btn">Close ✕</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -371,9 +436,7 @@
     </div>
 </section>
 
-<!-- =============================================
-     CERTIFICATIONS — Horizontal Flowing Carousel
-     ============================================= -->
+<!-- CERTIFICATIONS -->
 <section id="certifications" class="animate collapsible-section">
     <div class="container">
         <div class="section-toggle-header" data-target="certs-body">
@@ -384,21 +447,15 @@
             <button class="section-toggle-btn" aria-label="Toggle section"><i class="fas fa-chevron-down"></i></button>
         </div>
         <div class="section-body" id="certs-body">
-
-            <!-- Horizontal track -->
             <div class="cert-carousel-wrapper">
-                <!-- Scroll hint arrows -->
                 <button class="cert-arrow cert-arrow-left" id="certArrowLeft" aria-label="Scroll left">
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 <button class="cert-arrow cert-arrow-right" id="certArrowRight" aria-label="Scroll right">
                     <i class="fas fa-chevron-right"></i>
                 </button>
-
                 <div class="cert-track-outer" id="certTrack">
                     <div class="cert-track-inner">
-
-                        <!-- ── Cert 1: Google ── -->
                         <div class="cert-chip" data-cert-id="cert-google">
                             <div class="cert-chip-logo-wrap">
                                 <img src="assets/google-logo.png" alt="Google" class="cert-chip-logo">
@@ -409,8 +466,6 @@
                             </div>
                             <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
                         </div>
-
-                        <!-- ── Cert 2: Alteryx ── -->
                         <div class="cert-chip" data-cert-id="cert-alteryx">
                             <div class="cert-chip-logo-wrap">
                                 <img src="assets/alteryx.png" alt="Alteryx" class="cert-chip-logo">
@@ -421,8 +476,6 @@
                             </div>
                             <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
                         </div>
-
-                        <!-- ── Cert 3: Databricks ── -->
                         <div class="cert-chip" data-cert-id="cert-databricks">
                             <div class="cert-chip-logo-wrap cert-chip-logo-icon">
                                 <img src="assets/databricks.png" alt="Databricks" class="cert-chip-logo">
@@ -433,8 +486,6 @@
                             </div>
                             <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
                         </div>
-
-                        <!-- ── Cert 4: Microsoft / LinkedIn ── -->
                         <div class="cert-chip" data-cert-id="cert-microsoft">
                             <div class="cert-chip-logo-wrap">
                                 <img src="assets/microsoft.png" alt="Microsoft" class="cert-chip-logo">
@@ -445,15 +496,10 @@
                             </div>
                             <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
                         </div>
-
-                    </div><!-- /.cert-track-inner -->
-                </div><!-- /.cert-track-outer -->
-            </div><!-- /.cert-carousel-wrapper -->
-
-            <!-- Detail panels (shown below track when a chip is active) -->
+                    </div>
+                </div>
+            </div>
             <div class="cert-detail-panels">
-
-                <!-- Google detail -->
                 <div class="cert-detail-panel" id="cert-google">
                     <div class="cert-detail-inner">
                         <div class="cert-detail-header">
@@ -479,8 +525,6 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- Alteryx detail -->
                 <div class="cert-detail-panel" id="cert-alteryx">
                     <div class="cert-detail-inner">
                         <div class="cert-detail-header">
@@ -499,8 +543,6 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- Databricks detail -->
                 <div class="cert-detail-panel" id="cert-databricks">
                     <div class="cert-detail-inner">
                         <div class="cert-detail-header">
@@ -519,8 +561,6 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- Microsoft detail -->
                 <div class="cert-detail-panel" id="cert-microsoft">
                     <div class="cert-detail-inner">
                         <div class="cert-detail-header">
@@ -539,10 +579,8 @@
                         </button>
                     </div>
                 </div>
-
-            </div><!-- /.cert-detail-panels -->
-
-        </div><!-- /.section-body -->
+            </div>
+        </div>
     </div>
 </section>
 
@@ -550,9 +588,7 @@
 <div id="cert-popup" class="popup-overlay">
     <div class="popup-content cert-popup-content">
         <span class="popup-close cert-popup-close">&times;</span>
-        <!-- PDF viewer -->
         <iframe id="cert-popup-iframe" src="" title="Certificate" style="display:none; width:100%; height:80vh; border:none; border-radius:10px;"></iframe>
-        <!-- Image viewer -->
         <img id="cert-popup-img" src="" alt="Certificate" style="display:none; width:100%; object-fit:contain; max-height:80vh; border-radius:10px;">
     </div>
 </div>
@@ -632,6 +668,170 @@
 </footer>
 
 <script src="assets/js/virtual-cert.js"></script>
+<style>
+/* ── Churn Project Card Actions ── */
+.project-card-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--text-2);
+    border-color: var(--border-hover);
+}
+.github-btn:hover {
+    background: var(--surface-2);
+    color: var(--text);
+    border-color: var(--accent-2);
+}
+
+/* ── Churn Popup ── */
+.churn-popup-content {
+    max-width: 780px;
+    padding: 0;
+    overflow: hidden;
+}
+.churn-popup-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.churn-popup-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+}
+.churn-popup-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+.churn-popup-header h3 i { color: var(--accent); }
+.churn-popup-header p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.5px;
+}
+.churn-pages-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 55vh;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+.churn-pages-grid::-webkit-scrollbar { width: 4px; }
+.churn-pages-grid::-webkit-scrollbar-track { background: transparent; }
+.churn-pages-grid::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 4px; }
+.churn-page-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+}
+.churn-page-item:last-child { border-bottom: none; }
+.churn-page-item:hover { background: var(--surface-2); }
+.churn-page-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--tag-bg);
+    border: 1px solid var(--accent-glow);
+    border-radius: 6px;
+    padding: 4px 8px;
+    flex-shrink: 0;
+    min-width: 36px;
+    text-align: center;
+}
+.churn-page-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+}
+.churn-page-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+.churn-page-desc {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+.churn-page-img {
+    width: 90px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+    background: var(--surface-2);
+}
+.churn-popup-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--border);
+    background: var(--surface-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.churn-stats {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.churn-stat {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: 'Space Mono', monospace;
+}
+.churn-stat strong {
+    color: var(--accent);
+    display: block;
+    font-size: 13px;
+}
+.churn-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.25s;
+    text-decoration: none;
+    cursor: none;
+}
+.churn-github-link:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px var(--accent-glow);
+}
+@media (max-width: 600px) {
+    .churn-popup-footer { flex-direction: column; align-items: flex-start; }
+    .churn-page-img { display: none; }
+    .churn-stats { gap: 10px; }
+}
+</style>
+
 <script>
 // ── Custom Cursor ──
 const cursorDot  = document.getElementById('cursorDot');
@@ -649,7 +849,7 @@ document.addEventListener('mousemove', e => {
     cursorRing.style.transform = `translate(${ringX}px, ${ringY}px)`;
     requestAnimationFrame(lerpRing);
 })();
-document.querySelectorAll('a, button, .skill-card, .interest-card, .project-card, .job, .section-toggle-header, .tile, .cert-chip, .cert-view-btn, .volunteer, .exp-tile, .cert-node').forEach(el => {
+document.querySelectorAll('a, button, .skill-card, .interest-card, .project-card, .job, .section-toggle-header, .tile, .cert-chip, .cert-view-btn, .volunteer, .exp-tile, .cert-node, .churn-github-link').forEach(el => {
     el.addEventListener('mouseenter', () => { cursorRing.classList.add('ring-hover'); cursorDot.classList.add('dot-hover'); });
     el.addEventListener('mouseleave', () => { cursorRing.classList.remove('ring-hover'); cursorDot.classList.remove('dot-hover'); });
 });
@@ -730,9 +930,9 @@ staggerCards('.skill-card', '.skills-list');
 staggerCards('.interest-card', '.interests-grid');
 
 // ── Project Popups ──
-const dashBtn  = document.querySelector('.dashboard-btn:not(.performance-btn)');
+const dashBtn  = document.querySelector('.dashboard-btn:not(.performance-btn):not(.churn-btn):not(.github-btn)');
 const popup    = document.getElementById('dashboard-popup');
-const popClose = document.querySelector('.popup-close:not(.cert-popup-close):not(.performance-close)');
+const popClose = document.querySelector('.popup-close:not(.cert-popup-close):not(.performance-close):not(.churn-close)');
 dashBtn.addEventListener('click',  () => { popup.style.display = 'flex'; });
 popClose.addEventListener('click', () => { popup.style.display = 'none'; });
 popup.addEventListener('click', e => { if (e.target === popup) popup.style.display = 'none'; });
@@ -743,6 +943,14 @@ const perfClose = document.querySelector('.performance-close');
 perfBtn.addEventListener('click',   () => { perfPopup.style.display = 'flex'; });
 perfClose.addEventListener('click', () => { perfPopup.style.display = 'none'; });
 perfPopup.addEventListener('click', e => { if (e.target === perfPopup) perfPopup.style.display = 'none'; });
+
+// ── Churn Project Popup ──
+const churnBtn   = document.querySelector('.churn-btn');
+const churnPopup = document.getElementById('churn-popup');
+const churnClose = document.querySelector('.churn-close');
+churnBtn.addEventListener('click',   () => { churnPopup.style.display = 'flex'; });
+churnClose.addEventListener('click', () => { churnPopup.style.display = 'none'; });
+churnPopup.addEventListener('click', e => { if (e.target === churnPopup) churnPopup.style.display = 'none'; });
 
 // ── Certificate Popup ──
 const certPopup      = document.getElementById('cert-popup');
@@ -781,8 +989,9 @@ document.querySelectorAll('.cert-view-btn').forEach(btn => {
 // ── Escape closes all popups ──
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-        popup.style.display     = 'none';
-        perfPopup.style.display = 'none';
+        popup.style.display      = 'none';
+        perfPopup.style.display  = 'none';
+        churnPopup.style.display = 'none';
         closeCertPopup();
     }
 });
@@ -806,7 +1015,6 @@ document.querySelectorAll('.exp-tile').forEach(tile => {
     const panels     = document.querySelectorAll('.cert-detail-panel');
     const arrowLeft  = document.getElementById('certArrowLeft');
     const arrowRight = document.getElementById('certArrowRight');
-    let activeChip   = null;
 
     function closeAllPanels() {
         panels.forEach(p => p.classList.remove('cert-panel-open'));
@@ -818,13 +1026,10 @@ document.querySelectorAll('.exp-tile').forEach(tile => {
             const targetId = chip.getAttribute('data-cert-id');
             const panel    = document.getElementById(targetId);
             const isOpen   = chip.classList.contains('cert-chip-active');
-
             closeAllPanels();
-
             if (!isOpen) {
                 chip.classList.add('cert-chip-active');
                 panel.classList.add('cert-panel-open');
-                // Scroll panel into view smoothly
                 setTimeout(() => {
                     panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 }, 60);
@@ -832,11 +1037,9 @@ document.querySelectorAll('.exp-tile').forEach(tile => {
         });
     });
 
-    // Arrow scrolling
     arrowLeft.addEventListener('click', () => { track.scrollBy({ left: -260, behavior: 'smooth' }); });
     arrowRight.addEventListener('click', () => { track.scrollBy({ left: 260, behavior: 'smooth' }); });
 
-    // Show/hide arrows based on scroll position
     function updateArrows() {
         arrowLeft.style.opacity  = track.scrollLeft > 10 ? '1' : '0.3';
         arrowLeft.style.pointerEvents = track.scrollLeft > 10 ? 'auto' : 'none';
@@ -847,7 +1050,6 @@ document.querySelectorAll('.exp-tile').forEach(tile => {
     track.addEventListener('scroll', updateArrows);
     updateArrows();
 
-    // Stagger chip reveal
     const certSectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -862,6 +1064,13 @@ document.querySelectorAll('.exp-tile').forEach(tile => {
     const certTrackOuter = document.querySelector('.cert-track-outer');
     if (certTrackOuter) certSectionObserver.observe(certTrackOuter);
 })();
+
+// ── Virtual Experience Tiles ──
+document.querySelectorAll('.tile').forEach(tile => {
+    tile.querySelector('.tile-front').addEventListener('click', () => { tile.classList.toggle('active'); });
+    const closeBtn = tile.querySelector('.close-tile');
+    if (closeBtn) closeBtn.addEventListener('click', e => { e.stopPropagation(); tile.classList.remove('active'); });
+});
 </script>
 </body>
 </html>
