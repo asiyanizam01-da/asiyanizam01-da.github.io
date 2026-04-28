@@ -777,3 +777,174 @@ footer p { font-size:13px; color:rgba(255,255,255,0.6); margin:0; }
     .cert-detail-header { flex-direction: column; }
     .cert-chip { min-width: 185px; }
 }
+/* =====================
+   DATABEL CHURN PROJECT
+===================== */
+
+/* ── Project Card Actions (two-button row) ── */
+.project-card-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--text-2);
+    border-color: var(--border-hover);
+}
+.github-btn:hover {
+    background: var(--surface-2);
+    color: var(--text);
+    border-color: var(--accent-2);
+}
+
+/* ── Churn Popup ── */
+.churn-popup-content {
+    max-width: 780px;
+    padding: 0;
+    overflow: hidden;
+}
+.churn-popup-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.churn-popup-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+}
+.churn-popup-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+.churn-popup-header h3 i { color: var(--accent); }
+.churn-popup-header p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.5px;
+}
+
+/* ── Dashboard Pages List ── */
+.churn-pages-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 55vh;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+.churn-pages-grid::-webkit-scrollbar { width: 4px; }
+.churn-pages-grid::-webkit-scrollbar-track { background: transparent; }
+.churn-pages-grid::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 4px; }
+.churn-page-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+}
+.churn-page-item:last-child { border-bottom: none; }
+.churn-page-item:hover { background: var(--surface-2); }
+.churn-page-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--tag-bg);
+    border: 1px solid var(--accent-glow);
+    border-radius: 6px;
+    padding: 4px 8px;
+    flex-shrink: 0;
+    min-width: 36px;
+    text-align: center;
+}
+.churn-page-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+}
+.churn-page-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+.churn-page-desc {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+.churn-page-img {
+    width: 90px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+    background: var(--surface-2);
+}
+
+/* ── Churn Popup Footer ── */
+.churn-popup-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--border);
+    background: var(--surface-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.churn-stats {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.churn-stat {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: 'Space Mono', monospace;
+}
+.churn-stat strong {
+    color: var(--accent);
+    display: block;
+    font-size: 13px;
+}
+.churn-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.25s;
+    text-decoration: none;
+    cursor: none;
+}
+.churn-github-link:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px var(--accent-glow);
+}
+
+/* ── Churn Popup Responsive ── */
+@media (max-width: 600px) {
+    .churn-popup-footer { flex-direction: column; align-items: flex-start; }
+    .churn-page-img { display: none; }
+    .churn-stats { gap: 10px; }
+}
