@@ -791,33 +791,6 @@ churnClose.addEventListener('click',() => { churnPopup.style.display = 'none'; c
 churnPopup.addEventListener('click',e => { if (e.target === churnPopup) { churnPopup.style.display = 'none'; churnIframe.src = ''; } });
 
 /* ─────────────────────────────────────────────
-   CERT FILE POPUP (PDF viewer)
-───────────────────────────────────────────── */
-const certPopup       = document.getElementById('cert-popup');
-const certPopupClose  = document.querySelector('.cert-popup-close');
-const certPopupIframe = document.getElementById('cert-popup-iframe');
-const certPopupImg    = document.getElementById('cert-popup-img');
-
-function openCertFilePopup(asset, type) {
-    certPopupIframe.style.display = 'none';
-    certPopupImg.style.display    = 'none';
-    if (type === 'pdf') {
-        certPopupIframe.src = asset;
-        certPopupIframe.style.display = 'block';
-    } else {
-        certPopupImg.src = asset;
-        certPopupImg.style.display = 'block';
-    }
-    certPopup.style.display = 'flex';
-}
-function closeCertFilePopup() {
-    certPopup.style.display = 'none';
-    certPopupIframe.src = ''; certPopupImg.src = '';
-}
-certPopupClose.addEventListener('click', closeCertFilePopup);
-certPopup.addEventListener('click', e => { if (e.target === certPopup) closeCertFilePopup(); });
-
-/* ─────────────────────────────────────────────
    CERTIFICATION GRID — Detail popup data
 ───────────────────────────────────────────── */
 const certData = {
@@ -1008,7 +981,6 @@ document.addEventListener('keydown', e => {
     [bellabeatPopup, perfPopup].forEach(p => p.style.display = 'none');
     atlasPopup.style.display  = 'none'; atlasIframe.src  = '';
     churnPopup.style.display  = 'none'; churnIframe.src  = '';
-    closeCertFilePopup();
     closeCertDetail();
 });
 
