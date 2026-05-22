@@ -743,3 +743,26 @@ footer p { font-size:13px;color:rgba(255,255,255,.6);margin:0; }
 .cert-detail-popup-content::-webkit-scrollbar       { width: 4px; }
 .cert-detail-popup-content::-webkit-scrollbar-track { background: transparent; }
 .cert-detail-popup-content::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+/* Prevent PDF iframe overflow on smaller screens */
+.cdp-inline-iframe {
+    min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .cdp-inline-iframe {
+        height: 55vh;
+        min-height: 420px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
