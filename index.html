@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<!-- AURORA BACKGROUND -->
 <div class="aurora-bg" id="auroraBg">
     <div class="aurora-blob blob-1"></div>
     <div class="aurora-blob blob-2"></div>
@@ -19,11 +18,8 @@
     <div class="aurora-blob blob-5"></div>
 </div>
 
-<!-- CUSTOM CURSOR -->
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-
-<!-- SCROLL PROGRESS BAR -->
 <div class="scroll-progress-bar" id="scrollProgressBar"></div>
 
 <!-- NAVBAR -->
@@ -34,16 +30,16 @@
             <span class="logo-dot"></span>
         </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#virtual-experience">Virtual Exp.</a></li>
-            <li><a href="#certifications">Certs</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#volunteering">Volunteering</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hero" data-section="">Home</a></li>
+            <li><a href="#about" data-section="about-body">About</a></li>
+            <li><a href="#skills" data-section="skills-body">Skills</a></li>
+            <li><a href="#projects" data-section="projects-body">Projects</a></li>
+            <li><a href="#experience" data-section="experience-body">Experience</a></li>
+            <li><a href="#virtual-experience" data-section="virtual-body">Virtual Exp.</a></li>
+            <li><a href="#certifications" data-section="certs-body">Certs</a></li>
+            <li><a href="#interests" data-section="interests-body">Interests</a></li>
+            <li><a href="#volunteering" data-section="vol-body">Volunteering</a></li>
+            <li><a href="#contact" data-section="contact-body">Contact</a></li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -108,8 +104,8 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="#about" class="btn-primary">About Me</a>
-                    <a href="#contact" class="btn-outline">Get in Touch</a>
+                    <a href="#about" class="btn-primary" data-section="about-body">About Me</a>
+                    <a href="#contact" class="btn-outline" data-section="contact-body">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -128,18 +124,13 @@
         </div>
         <div class="section-body" id="about-body">
             <div class="about-body-inner">
-                <p>
-Google Certified Data Analyst and Microsoft Certified PL-300: Power BI Data Analyst Associate with 3+ years of experience working with complex data across consulting, operations, and enterprise environments. Master's graduate in Engineering Management from the University of Greenwich, UK, with a Bachelor's degree from APJ Abdul Kalam Technological University, Trivandrum.
-</p>
-
-<p>
-Detail-oriented and passionate about uncovering patterns, solving business problems, and transforming raw data into actionable insights that support better decision-making. Skilled across the analytics lifecycle — from data cleaning and SQL querying to building interactive dashboards and visual reports using Power BI, Tableau, Python, and Excel.
-</p>
+                <p>Google Certified Data Analyst and Microsoft Certified PL-300: Power BI Data Analyst Associate with 3+ years of experience working with complex data across consulting, operations, and enterprise environments. Master's graduate in Engineering Management from the University of Greenwich, UK, with a Bachelor's degree from APJ Abdul Kalam Technological University, Trivandrum.</p>
+                <p>Detail-oriented and passionate about uncovering patterns, solving business problems, and transforming raw data into actionable insights that support better decision-making. Skilled across the analytics lifecycle — from data cleaning and SQL querying to building interactive dashboards and visual reports using Power BI, Tableau, Python, and Excel.</p>
                 <div class="about-stats">
                     <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Exp.</span></div>
                     <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Tools Mastered</span></div>
                     <div class="stat"><span class="stat-num">4</span><span class="stat-label">Projects</span></div>
-                    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
+                    <div class="stat"><span class="stat-num">5</span><span class="stat-label">Certifications</span></div>
                 </div>
             </div>
         </div>
@@ -169,7 +160,6 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                 <li class="skill-card"><img src="assets/tableau.png" alt="Tableau" style="width:22px;height:22px;border-radius:4px;"><span>Tableau</span></li>
                 <li class="skill-card"><img src="assets/alteryx.png" alt="Alteryx" style="width:22px;height:22px;border-radius:4px;"><span>Alteryx</span></li>
                 <li class="skill-card"><img src="assets/databricks.png" alt="Databricks" style="width:22px;height:22px;border-radius:4px;"><span>Databricks</span></li>
-                <!--<li class="skill-card"><img src="assets/looker.png" alt="Looker" style="width:22px;height:22px;border-radius:4px;"><span>Looker</span></li>-->
             </ul>
         </div>
     </div>
@@ -186,19 +176,16 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
             <button class="section-toggle-btn" aria-label="Toggle section"><i class="fas fa-chevron-down"></i></button>
         </div>
         <div class="section-body" id="projects-body">
-
-            <!-- NEW: Atlas Labs — added at top -->
             <div class="project-card">
                 <div class="project-tag">Power BI · DAX · HR Analytics</div>
                 <h3>Atlas Labs — Employee Attrition Analysis</h3>
-                <p>Analysed employee attrition and performance for a fictional company (Atlas Labs) as part of DataCamp's <em>Data Analyst in Power BI</em> track. Explored dimensional data including hiring dates, ethnicity, demographics, overtime, and travel requirements alongside satisfaction ratings (job, environment, relationship, work-life balance) and performance scores (self-rating & manager rating) for both active and non-active employees to surface retention insights.</p>
+                <p>Analysed employee attrition and performance for a fictional company (Atlas Labs) as part of DataCamp's <em>Data Analyst in Power BI</em> track. Explored dimensional data including hiring dates, ethnicity, demographics, overtime, and travel requirements alongside satisfaction ratings and performance scores for both active and non-active employees to surface retention insights.</p>
                 <p class="tools-used"><strong>Tools:</strong> Power BI · DAX · Power Query</p>
                 <div class="project-card-actions">
                     <button class="dashboard-btn atlas-btn">View Dashboard →</button>
                     <a href="https://github.com/asiyanizam01-da" target="_blank" class="dashboard-btn github-btn"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
-
             <div class="project-card">
                 <div class="project-tag">Power BI · DAX · Telecom Analytics</div>
                 <h3>Databel Telecom — Customer Churn Analysis</h3>
@@ -215,8 +202,8 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                 <p>Analysed smart device usage data to understand activity, sleep, and wellness patterns. Insights were applied to inform marketing strategy for Bellabeat products.</p>
                 <p class="tools-used"><strong>Tools:</strong> MS Excel · Python · VS Code · Power BI</p>
                 <div class="project-card-actions">
-                <button class="dashboard-btn bellabeat-btn">View Dashboard →</button>
-                <a href="https://github.com/asiyanizam01-da" target="_blank" class="dashboard-btn github-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                    <button class="dashboard-btn bellabeat-btn">View Dashboard →</button>
+                    <a href="https://github.com/asiyanizam01-da" target="_blank" class="dashboard-btn github-btn"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
             <div class="project-card">
@@ -231,8 +218,6 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
 </section>
 
 <!-- PROJECT POPUPS -->
-
-<!-- Atlas Labs PDF Popup -->
 <div id="atlas-popup" class="popup-overlay pdf-popup-overlay">
     <div class="popup-content pdf-popup-content">
         <span class="popup-close atlas-close">&times;</span>
@@ -245,24 +230,18 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
         </div>
     </div>
 </div>
-
-<!-- Bellabeat Popup -->
 <div id="dashboard-popup" class="popup-overlay">
     <div class="popup-content">
         <span class="popup-close bellabeat-close">&times;</span>
         <img src="assets/Bellabeat_Project_Dashboard.png" alt="Bellabeat Project Dashboard">
     </div>
 </div>
-
-<!-- Employee Performance Popup -->
 <div id="performance-popup" class="popup-overlay">
     <div class="popup-content">
         <span class="popup-close performance-close">&times;</span>
         <img src="assets/employee_performance_dashboard.png" alt="Employee Performance Dashboard">
     </div>
 </div>
-
-<!-- Databel Churn — now a PDF popup -->
 <div id="churn-popup" class="popup-overlay pdf-popup-overlay">
     <div class="popup-content pdf-popup-content">
         <span class="popup-close churn-close">&times;</span>
@@ -290,9 +269,7 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
             <div class="exp-tiles-grid">
                 <div class="exp-tile" data-index="0">
                     <div class="exp-tile-front">
-                        <div class="exp-tile-logo-wrap">
-                            <img src="assets/capgemini.png" alt="Capgemini logo" class="exp-tile-logo">
-                        </div>
+                        <div class="exp-tile-logo-wrap"><img src="assets/capgemini.png" alt="Capgemini" class="exp-tile-logo"></div>
                         <div class="exp-tile-info">
                             <span class="exp-tile-role">Senior Analyst</span>
                             <span class="exp-tile-company">Capgemini Technology Services</span>
@@ -303,10 +280,7 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                     <div class="exp-tile-back">
                         <div class="exp-back-header">
                             <img src="assets/capgemini.png" alt="Capgemini" class="exp-back-logo">
-                            <div>
-                                <h3>Senior Analyst</h3>
-                                <p class="exp-back-company">Capgemini Technology Services · Nov 2020 – Dec 2022</p>
-                            </div>
+                            <div><h3>Senior Analyst</h3><p class="exp-back-company">Capgemini Technology Services · Nov 2020 – Dec 2022</p></div>
                         </div>
                         <ul class="exp-back-list">
                             <li>Worked hands-on with SAP data, analyzing large datasets to support decision-making.</li>
@@ -319,9 +293,7 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                 </div>
                 <div class="exp-tile" data-index="1">
                     <div class="exp-tile-front">
-                        <div class="exp-tile-logo-wrap">
-                            <img src="assets/nutradirect.jpeg" alt="Nutra Direct logo" class="exp-tile-logo">
-                        </div>
+                        <div class="exp-tile-logo-wrap"><img src="assets/nutradirect.jpeg" alt="Nutra Direct" class="exp-tile-logo"></div>
                         <div class="exp-tile-info">
                             <span class="exp-tile-role">Administrator</span>
                             <span class="exp-tile-company">Nutra Direct</span>
@@ -332,10 +304,7 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                     <div class="exp-tile-back">
                         <div class="exp-back-header">
                             <img src="assets/nutradirect.jpeg" alt="Nutra Direct" class="exp-back-logo">
-                            <div>
-                                <h3>Administrator</h3>
-                                <p class="exp-back-company">Nutra Direct · Aug 2024 – Oct 2024</p>
-                            </div>
+                            <div><h3>Administrator</h3><p class="exp-back-company">Nutra Direct · Aug 2024 – Oct 2024</p></div>
                         </div>
                         <ul class="exp-back-list">
                             <li>Streamlined inventory tracking and analysis.</li>
@@ -347,9 +316,7 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                 </div>
                 <div class="exp-tile" data-index="2">
                     <div class="exp-tile-front">
-                        <div class="exp-tile-logo-wrap">
-                            <img src="assets/metaclickdata.png" alt="MetaClickData logo" class="exp-tile-logo" onerror="this.style.display='none'">
-                        </div>
+                        <div class="exp-tile-logo-wrap"><img src="assets/metaclickdata.png" alt="MetaClickData" class="exp-tile-logo" onerror="this.style.display='none'"></div>
                         <div class="exp-tile-info">
                             <span class="exp-tile-role">Data Analyst Trainee</span>
                             <span class="exp-tile-company">MetaClickData Ltd.</span>
@@ -361,10 +328,7 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
                     <div class="exp-tile-back">
                         <div class="exp-back-header">
                             <img src="assets/metaclickdata.png" alt="MetaClickData" class="exp-back-logo" onerror="this.style.display='none'">
-                            <div>
-                                <h3>Data Analyst Trainee</h3>
-                                <p class="exp-back-company">MetaClickData Ltd. · Feb 2025 – Present</p>
-                            </div>
+                            <div><h3>Data Analyst Trainee</h3><p class="exp-back-company">MetaClickData Ltd. · Feb 2025 – Present</p></div>
                         </div>
                         <ul class="exp-back-list">
                             <li>Gained end-to-end exposure to data workflows across multiple client projects, from data ingestion through to dashboard delivery.</li>
@@ -390,7 +354,6 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
             <button class="section-toggle-btn" aria-label="Toggle section"><i class="fas fa-chevron-down"></i></button>
         </div>
         <div class="section-body" id="virtual-body">
-            <!-- Hint label -->
             <p class="virtual-hint"><i class="fas fa-hand-pointer"></i> Click a card to learn more</p>
             <div class="tiles-grid">
                 <div class="tile">
@@ -435,7 +398,9 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
     </div>
 </section>
 
-<!-- CERTIFICATIONS -->
+<!-- ==========================================
+     CERTIFICATIONS — Badge Grid + Popup modal
+     ========================================== -->
 <section id="certifications" class="animate collapsible-section">
     <div class="container">
         <div class="section-toggle-header" data-target="certs-body">
@@ -446,322 +411,133 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
             <button class="section-toggle-btn" aria-label="Toggle section"><i class="fas fa-chevron-down"></i></button>
         </div>
         <div class="section-body" id="certs-body">
-            <div class="cert-carousel-wrapper">
-                <button class="cert-arrow cert-arrow-left" id="certArrowLeft" aria-label="Scroll left">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="cert-arrow cert-arrow-right" id="certArrowRight" aria-label="Scroll right">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="cert-track-outer" id="certTrack">
-                    <div class="cert-track-inner">
+            <div class="cert-grid">
 
-                        <!-- 1. Google -->
-                        <div class="cert-chip" data-cert-id="cert-google">
-                            <div class="cert-chip-logo-wrap cert-chip-has-badge">
-                                <img src="assets/google_data_analytics_badge.png" alt="Google Badge" class="cert-chip-badge-img">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">Google · Coursera</span>
-                                <span class="cert-chip-name">Data Analytics Professional Certificate</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 2. Power BI (DataCamp) — NEW -->
-                        <div class="cert-chip" data-cert-id="cert-powerbi">
-                            <div class="cert-chip-logo-wrap cert-chip-has-badge">
-                                <img src="assets/Data_Analyst_in_PowerBI_Badge.png" alt="Power BI Badge" class="cert-chip-badge-img">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">DataCamp</span>
-                                <span class="cert-chip-name">Data Analyst in Power BI</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 3. DataCamp SQL Fundamentals -->
-                        <div class="cert-chip" data-cert-id="cert-sql">
-                            <div class="cert-chip-logo-wrap cert-chip-has-badge">
-                                <img src="assets/SQL_Fundamentals_Badge.png" alt="SQL Fundamentals Badge" class="cert-chip-badge-img">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">DataCamp</span>
-                                <span class="cert-chip-name">SQL Fundamentals</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 4. HackerRank SQL -->
-                        <div class="cert-chip" data-cert-id="cert-hackerrank">
-                            <div class="cert-chip-logo-wrap cert-chip-has-badge">
-                                <img src="assets/SQL_Gold_Badge.png" alt="HackerRank SQL Badge" class="cert-chip-badge-img">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">HackerRank</span>
-                                <span class="cert-chip-name">Intermediate SQL Certification</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 5. IBM Data Science Methodology -->
-                        <div class="cert-chip" data-cert-id="cert-ibm">
-                            <div class="cert-chip-logo-wrap cert-chip-has-badge">
-                                <img src="assets/IBM_Data_Science_Methodology_Badge.png" alt="IBM Badge" class="cert-chip-badge-img">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">IBM · Coursera</span>
-                                <span class="cert-chip-name">Data Science Methodology</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 6. Alteryx -->
-                        <div class="cert-chip" data-cert-id="cert-alteryx">
-                            <div class="cert-chip-logo-wrap">
-                                <img src="assets/alteryx.png" alt="Alteryx" class="cert-chip-logo">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">Alteryx</span>
-                                <span class="cert-chip-name">Essentials Certification</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 7. Databricks -->
-                        <div class="cert-chip" data-cert-id="cert-databricks">
-                            <div class="cert-chip-logo-wrap cert-chip-logo-icon">
-                                <img src="assets/databricks.png" alt="Databricks" class="cert-chip-logo">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">Databricks</span>
-                                <span class="cert-chip-name">Fundamentals Accreditation</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
-                        <!-- 8. Microsoft -->
-                        <div class="cert-chip" data-cert-id="cert-microsoft">
-                            <div class="cert-chip-logo-wrap">
-                                <img src="assets/microsoft.png" alt="Microsoft" class="cert-chip-logo">
-                            </div>
-                            <div class="cert-chip-text">
-                                <span class="cert-chip-issuer">Microsoft &amp; LinkedIn Learning</span>
-                                <span class="cert-chip-name">Career Essentials in Generative AI</span>
-                            </div>
-                            <span class="cert-chip-arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-
+                <!-- 1. Microsoft PL-300 -->
+                <div class="cert-card-tile" data-cert="cert-pl300">
+                    <div class="cert-card-tile-badge-wrap">
+                        <img src="assets/microsoft_certified_power_bi_badge.png" alt="Microsoft PL-300 Badge" class="cert-card-tile-badge" onerror="this.style.display='none'">
+                        <div class="cert-card-tile-fallback" style="display:none;"><i class="fab fa-microsoft"></i></div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Detail Panels -->
-            <div class="cert-detail-panels">
-
-                <!-- Google -->
-                <div class="cert-detail-panel" id="cert-google">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-badge-wrap">
-                                <img src="assets/google_data_analytics_badge.png" alt="Google Badge" class="cert-detail-badge">
-                            </div>
-                            <div>
-                                <h3>Google Data Analytics Professional Certificate</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Google · Coursera</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Foundations: Data, Data, Everywhere</li>
-                            <li><i class="fas fa-check-circle"></i> Ask Questions to Make Data-Driven Decisions</li>
-                            <li><i class="fas fa-check-circle"></i> Prepare Data for Exploration</li>
-                            <li><i class="fas fa-check-circle"></i> Process Data from Dirty to Clean</li>
-                            <li><i class="fas fa-check-circle"></i> Analyse Data to Answer Questions</li>
-                            <li><i class="fas fa-check-circle"></i> Share Data Through the Art of Visualisation</li>
-                            <li><i class="fas fa-check-circle"></i> Introduction to Data Analysis using Python</li>
-                            <li><i class="fas fa-check-circle"></i> Google Data Analytics Capstone: Complete a Case Study</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/Google_Data_Analytics_Certificate.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">Microsoft</span>
+                        <span class="cert-card-tile-name">Power BI Data Analyst Associate (PL-300)</span>
                     </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- Power BI — NEW -->
-                <div class="cert-detail-panel" id="cert-powerbi">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-badge-wrap">
-                                <img src="assets/Data_Analyst_in_PowerBI_Badge.png" alt="Power BI Badge" class="cert-detail-badge">
-                            </div>
-                            <div>
-                                <h3>Data Analyst in Power BI</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> DataCamp</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Introduction to Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Introduction to DAX in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Data Visualisation in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Data Preparation in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Data Transformation in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Data Modeling in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Intermediate Data Modeling in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> DAX Functions in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Intermediate DAX in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Exploratory Data Analysis in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Trend Analysis in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Reports Design in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Data Connections in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Deploying and Maintaining Assets in Power BI</li>
-                            <li><i class="fas fa-check-circle"></i> Case Study 1 &amp; Case Study 2</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/Data_Analyst_in_PowerBI.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 2. Google -->
+                <div class="cert-card-tile" data-cert="cert-google">
+                    <div class="cert-card-tile-badge-wrap">
+                        <img src="assets/google_data_analytics_badge.png" alt="Google Badge" class="cert-card-tile-badge">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">Google · Coursera</span>
+                        <span class="cert-card-tile-name">Data Analytics Professional Certificate</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- DataCamp SQL -->
-                <div class="cert-detail-panel" id="cert-sql">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-badge-wrap">
-                                <img src="assets/SQL_Fundamentals_Badge.png" alt="SQL Fundamentals Badge" class="cert-detail-badge">
-                            </div>
-                            <div>
-                                <h3>SQL Fundamentals</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> DataCamp</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Completed DataCamp SQL Fundamentals skill track covering querying, filtering, aggregation, joins, subqueries, and database design</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/SQL_Fundamentals.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 3. Power BI DataCamp -->
+                <div class="cert-card-tile" data-cert="cert-powerbi">
+                    <div class="cert-card-tile-badge-wrap">
+                        <img src="assets/Data_Analyst_in_PowerBI_Badge.png" alt="Power BI Badge" class="cert-card-tile-badge">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">DataCamp</span>
+                        <span class="cert-card-tile-name">Data Analyst in Power BI</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- HackerRank SQL -->
-                <div class="cert-detail-panel" id="cert-hackerrank">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-badge-wrap">
-                                <img src="assets/SQL_Gold_Badge.png" alt="HackerRank SQL Gold Badge" class="cert-detail-badge">
-                            </div>
-                            <div>
-                                <h3>Intermediate SQL Certification</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> HackerRank</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Earned HackerRank Intermediate SQL Certification demonstrating proficiency in complex queries, window functions, and advanced SQL problem-solving</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/sql_intermediate certificate.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 4. SQL Fundamentals -->
+                <div class="cert-card-tile" data-cert="cert-sql">
+                    <div class="cert-card-tile-badge-wrap">
+                        <img src="assets/SQL_Fundamentals_Badge.png" alt="SQL Fundamentals Badge" class="cert-card-tile-badge">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">DataCamp</span>
+                        <span class="cert-card-tile-name">SQL Fundamentals</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- IBM -->
-                <div class="cert-detail-panel" id="cert-ibm">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-badge-wrap">
-                                <img src="assets/IBM_Data_Science_Methodology_Badge.png" alt="IBM Badge" class="cert-detail-badge">
-                            </div>
-                            <div>
-                                <h3>Data Science Methodology</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> IBM · Coursera</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Completed IBM Data Science Methodology course covering structured approaches to solving data science problems from business understanding through deployment</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/IBM_Data_Science_Methodology.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 5. HackerRank SQL -->
+                <div class="cert-card-tile" data-cert="cert-hackerrank">
+                    <div class="cert-card-tile-badge-wrap">
+                        <img src="assets/SQL_Gold_Badge.png" alt="HackerRank SQL Badge" class="cert-card-tile-badge">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">HackerRank</span>
+                        <span class="cert-card-tile-name">Intermediate SQL Certification</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- Alteryx -->
-                <div class="cert-detail-panel" id="cert-alteryx">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-logo-plain">
-                                <img src="assets/alteryx.png" alt="Alteryx" class="cert-detail-logo-plain-img">
-                            </div>
-                            <div>
-                                <h3>Alteryx Essentials Certification</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Alteryx</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Completed Alteryx Essentials certification covering core data preparation and blending workflows</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/Alteryx_Essentials_Certificate.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 6. IBM -->
+                <div class="cert-card-tile" data-cert="cert-ibm">
+                    <div class="cert-card-tile-badge-wrap">
+                        <img src="assets/IBM_Data_Science_Methodology_Badge.png" alt="IBM Badge" class="cert-card-tile-badge">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">IBM · Coursera</span>
+                        <span class="cert-card-tile-name">Data Science Methodology</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- Databricks -->
-                <div class="cert-detail-panel" id="cert-databricks">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-logo-plain">
-                                <img src="assets/databricks.png" alt="Databricks" class="cert-detail-logo-plain-img">
-                            </div>
-                            <div>
-                                <h3>Databricks Fundamentals Accreditation</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Databricks</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Completed Databricks Fundamentals Accreditation covering the Lakehouse Platform and core data engineering concepts</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/Databricks_Fundamentals_Certificate.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 7. Alteryx -->
+                <div class="cert-card-tile" data-cert="cert-alteryx">
+                    <div class="cert-card-tile-badge-wrap cert-card-tile-logo-plain">
+                        <img src="assets/alteryx.png" alt="Alteryx" class="cert-card-tile-logo-img">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">Alteryx</span>
+                        <span class="cert-card-tile-name">Essentials Certification</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-                <!-- Microsoft -->
-                <div class="cert-detail-panel" id="cert-microsoft">
-                    <div class="cert-detail-inner">
-                        <div class="cert-detail-header">
-                            <div class="cert-detail-logo-wrap cert-detail-logo-plain">
-                                <img src="assets/microsoft.png" alt="Microsoft" class="cert-detail-logo-plain-img">
-                            </div>
-                            <div>
-                                <h3>Career Essentials in Generative AI</h3>
-                                <p class="cert-detail-issuer"><i class="fas fa-building"></i> Microsoft &amp; LinkedIn Learning</p>
-                            </div>
-                            <span class="cert-status-badge cert-complete">Completed</span>
-                        </div>
-                        <ul class="cert-modules">
-                            <li><i class="fas fa-check-circle"></i> Completed Microsoft &amp; LinkedIn Learning course on Generative AI essentials</li>
-                        </ul>
-                        <button class="cert-view-btn" data-cert-asset="assets/CertificateOfCompletion_What Is Generative AI.pdf" data-cert-type="pdf">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
+                <!-- 8. Databricks -->
+                <div class="cert-card-tile" data-cert="cert-databricks">
+                    <div class="cert-card-tile-badge-wrap cert-card-tile-logo-plain">
+                        <img src="assets/databricks.png" alt="Databricks" class="cert-card-tile-logo-img">
                     </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">Databricks</span>
+                        <span class="cert-card-tile-name">Fundamentals Accreditation</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
                 </div>
 
-            </div>
+                <!-- 9. Microsoft GenAI -->
+                <div class="cert-card-tile" data-cert="cert-microsoft">
+                    <div class="cert-card-tile-badge-wrap cert-card-tile-logo-plain">
+                        <img src="assets/microsoft.png" alt="Microsoft" class="cert-card-tile-logo-img">
+                    </div>
+                    <div class="cert-card-tile-info">
+                        <span class="cert-card-tile-issuer">Microsoft &amp; LinkedIn</span>
+                        <span class="cert-card-tile-name">Career Essentials in Generative AI</span>
+                    </div>
+                    <div class="cert-card-tile-hover"><i class="fas fa-expand-alt"></i> Details</div>
+                </div>
+
+            </div><!-- /.cert-grid -->
         </div>
     </div>
 </section>
 
-<!-- CERTIFICATE POPUP OVERLAY -->
+<!-- ── CERTIFICATION DETAIL POPUP ── -->
+<div id="cert-detail-popup" class="popup-overlay cert-detail-overlay">
+    <div class="popup-content cert-detail-popup-content">
+        <button class="cert-detail-close" id="certDetailClose" aria-label="Close">&times;</button>
+        <div class="cert-detail-popup-inner" id="certDetailInner">
+            <!-- injected by JS -->
+        </div>
+    </div>
+</div>
+
+<!-- ── CERTIFICATE FILE POPUP (PDF/image) ── -->
 <div id="cert-popup" class="popup-overlay">
     <div class="popup-content cert-popup-content">
         <span class="popup-close cert-popup-close">&times;</span>
@@ -846,15 +622,42 @@ Detail-oriented and passionate about uncovering patterns, solving business probl
 
 <script src="assets/js/virtual-cert.js"></script>
 <script>
-// ── Custom Cursor ──
+/* ─────────────────────────────────────────────
+   SECTION EXPAND HELPER
+   Opens a collapsible section by its body ID
+───────────────────────────────────────────── */
+function expandSection(bodyId) {
+    if (!bodyId) return;
+    const body = document.getElementById(bodyId);
+    if (!body) return;
+    // Find its toggle header
+    const header = document.querySelector(`.section-toggle-header[data-target="${bodyId}"]`);
+    const btn    = header ? header.querySelector('.section-toggle-btn i') : null;
+    if (body.classList.contains('collapsed')) {
+        body.classList.remove('collapsed');
+        if (btn) btn.style.transform = 'rotate(0deg)';
+    }
+}
+
+/* ─────────────────────────────────────────────
+   NAV LINKS — expand section on click
+───────────────────────────────────────────── */
+document.querySelectorAll('[data-section]').forEach(el => {
+    el.addEventListener('click', function() {
+        const sectionId = this.getAttribute('data-section');
+        if (sectionId) expandSection(sectionId);
+    });
+});
+
+/* ─────────────────────────────────────────────
+   CUSTOM CURSOR
+───────────────────────────────────────────── */
 const cursorDot  = document.getElementById('cursorDot');
 const cursorRing = document.getElementById('cursorRing');
 let ringX = 0, ringY = 0, ringTargetX = 0, ringTargetY = 0;
-
 document.addEventListener('mousemove', e => {
     cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-    ringTargetX = e.clientX;
-    ringTargetY = e.clientY;
+    ringTargetX = e.clientX; ringTargetY = e.clientY;
 });
 (function lerpRing() {
     ringX += (ringTargetX - ringX) * 0.12;
@@ -862,14 +665,16 @@ document.addEventListener('mousemove', e => {
     cursorRing.style.transform = `translate(${ringX}px, ${ringY}px)`;
     requestAnimationFrame(lerpRing);
 })();
-document.querySelectorAll('a, button, .skill-card, .interest-card, .project-card, .job, .section-toggle-header, .tile, .cert-chip, .cert-view-btn, .volunteer, .exp-tile, .cert-node, .churn-github-link').forEach(el => {
+document.querySelectorAll('a, button, .skill-card, .interest-card, .project-card, .section-toggle-header, .tile, .cert-card-tile, .volunteer, .exp-tile').forEach(el => {
     el.addEventListener('mouseenter', () => { cursorRing.classList.add('ring-hover'); cursorDot.classList.add('dot-hover'); });
     el.addEventListener('mouseleave', () => { cursorRing.classList.remove('ring-hover'); cursorDot.classList.remove('dot-hover'); });
 });
 document.addEventListener('mouseleave', () => { cursorDot.style.opacity='0'; cursorRing.style.opacity='0'; });
 document.addEventListener('mouseenter', () => { cursorDot.style.opacity='1'; cursorRing.style.opacity='1'; });
 
-// ── Collapsible Sections ──
+/* ─────────────────────────────────────────────
+   COLLAPSIBLE SECTIONS
+───────────────────────────────────────────── */
 document.querySelectorAll('.section-toggle-header').forEach(header => {
     const targetId = header.getAttribute('data-target');
     const body = document.getElementById(targetId);
@@ -883,24 +688,28 @@ document.querySelectorAll('.section-toggle-header').forEach(header => {
     });
 });
 
-// ── Scroll Progress ──
+/* ─────────────────────────────────────────────
+   SCROLL PROGRESS + NAVBAR
+───────────────────────────────────────────── */
 const progressBar = document.getElementById('scrollProgressBar');
+const navbar      = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     const pct = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
     progressBar.style.width = pct + '%';
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ── Navbar shadow ──
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 50); });
-
-// ── Hamburger ──
+/* ─────────────────────────────────────────────
+   HAMBURGER
+───────────────────────────────────────────── */
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); navLinks.classList.toggle('open'); });
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hamburger.classList.remove('open'); navLinks.classList.remove('open'); }));
 
-// ── Theme Toggle ──
+/* ─────────────────────────────────────────────
+   THEME TOGGLE
+───────────────────────────────────────────── */
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon   = document.getElementById('themeIcon');
 const html        = document.documentElement;
@@ -915,13 +724,14 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', newTheme);
 });
 
-// ── Scroll Reveal ──
+/* ─────────────────────────────────────────────
+   SCROLL REVEAL + STAGGER
+───────────────────────────────────────────── */
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('fade-in'); });
 }, { threshold: 0.06 });
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
-// ── Stagger cards ──
 function staggerCards(selector, parentSel) {
     const first = document.querySelector(selector);
     if (!first) return;
@@ -931,7 +741,7 @@ function staggerCards(selector, parentSel) {
             const parent = entry.target.closest(parentSel);
             if (!parent) return;
             parent.querySelectorAll(selector).forEach((c, i) => {
-                c.style.transitionDelay = `${i * 0.07}s`;
+                c.style.transitionDelay = `${i * 0.06}s`;
                 c.classList.add('card-in');
             });
             o.unobserve(entry.target);
@@ -941,54 +751,54 @@ function staggerCards(selector, parentSel) {
 }
 staggerCards('.skill-card', '.skills-list');
 staggerCards('.interest-card', '.interests-grid');
+staggerCards('.cert-card-tile', '.cert-grid');
 
-// ── Atlas Labs Popup (PDF) ──
-const atlasBtn   = document.querySelector('.atlas-btn');
-const atlasPopup = document.getElementById('atlas-popup');
+/* ─────────────────────────────────────────────
+   PROJECT POPUPS
+───────────────────────────────────────────── */
+// Atlas
+const atlasBtn    = document.querySelector('.atlas-btn');
+const atlasPopup  = document.getElementById('atlas-popup');
 const atlasIframe = document.getElementById('atlas-iframe');
-const atlasClose = document.querySelector('.atlas-close');
-atlasBtn.addEventListener('click', () => {
-    atlasIframe.src = 'assets/atlas_labs_hr_analytics_dashboard.pdf';
-    atlasPopup.style.display = 'flex';
-});
+const atlasClose  = document.querySelector('.atlas-close');
+atlasBtn.addEventListener('click', () => { atlasIframe.src = 'assets/atlas_labs_hr_analytics_dashboard.pdf'; atlasPopup.style.display = 'flex'; });
 atlasClose.addEventListener('click', () => { atlasPopup.style.display = 'none'; atlasIframe.src = ''; });
 atlasPopup.addEventListener('click', e => { if (e.target === atlasPopup) { atlasPopup.style.display = 'none'; atlasIframe.src = ''; } });
 
-// ── Bellabeat Popup ──
+// Bellabeat
 const bellabeatBtn   = document.querySelector('.bellabeat-btn');
 const bellabeatPopup = document.getElementById('dashboard-popup');
 const bellabeatClose = document.querySelector('.bellabeat-close');
 bellabeatBtn.addEventListener('click',  () => { bellabeatPopup.style.display = 'flex'; });
-bellabeatClose.addEventListener('click', () => { bellabeatPopup.style.display = 'none'; });
-bellabeatPopup.addEventListener('click', e => { if (e.target === bellabeatPopup) bellabeatPopup.style.display = 'none'; });
+bellabeatClose.addEventListener('click',() => { bellabeatPopup.style.display = 'none'; });
+bellabeatPopup.addEventListener('click',e => { if (e.target === bellabeatPopup) bellabeatPopup.style.display = 'none'; });
 
-// ── Employee Performance Popup ──
+// Performance
 const perfBtn   = document.querySelector('.performance-btn');
 const perfPopup = document.getElementById('performance-popup');
 const perfClose = document.querySelector('.performance-close');
-perfBtn.addEventListener('click',   () => { perfPopup.style.display = 'flex'; });
-perfClose.addEventListener('click', () => { perfPopup.style.display = 'none'; });
-perfPopup.addEventListener('click', e => { if (e.target === perfPopup) perfPopup.style.display = 'none'; });
+perfBtn.addEventListener('click',  () => { perfPopup.style.display = 'flex'; });
+perfClose.addEventListener('click',() => { perfPopup.style.display = 'none'; });
+perfPopup.addEventListener('click',e => { if (e.target === perfPopup) perfPopup.style.display = 'none'; });
 
-// ── Churn Popup (now PDF) ──
-const churnBtn   = document.querySelector('.churn-btn');
-const churnPopup = document.getElementById('churn-popup');
+// Churn
+const churnBtn    = document.querySelector('.churn-btn');
+const churnPopup  = document.getElementById('churn-popup');
 const churnIframe = document.getElementById('churn-iframe');
-const churnClose = document.querySelector('.churn-close');
-churnBtn.addEventListener('click', () => {
-    churnIframe.src = 'assets/databel_churn_dashboard_5pages.pdf';
-    churnPopup.style.display = 'flex';
-});
-churnClose.addEventListener('click', () => { churnPopup.style.display = 'none'; churnIframe.src = ''; });
-churnPopup.addEventListener('click', e => { if (e.target === churnPopup) { churnPopup.style.display = 'none'; churnIframe.src = ''; } });
+const churnClose  = document.querySelector('.churn-close');
+churnBtn.addEventListener('click', () => { churnIframe.src = 'assets/databel_churn_dashboard_5pages.pdf'; churnPopup.style.display = 'flex'; });
+churnClose.addEventListener('click',() => { churnPopup.style.display = 'none'; churnIframe.src = ''; });
+churnPopup.addEventListener('click',e => { if (e.target === churnPopup) { churnPopup.style.display = 'none'; churnIframe.src = ''; } });
 
-// ── Certificate Popup ──
-const certPopup      = document.getElementById('cert-popup');
-const certPopupClose = document.querySelector('.cert-popup-close');
+/* ─────────────────────────────────────────────
+   CERT FILE POPUP (PDF viewer)
+───────────────────────────────────────────── */
+const certPopup       = document.getElementById('cert-popup');
+const certPopupClose  = document.querySelector('.cert-popup-close');
 const certPopupIframe = document.getElementById('cert-popup-iframe');
-const certPopupImg   = document.getElementById('cert-popup-img');
+const certPopupImg    = document.getElementById('cert-popup-img');
 
-function openCertPopup(asset, type) {
+function openCertFilePopup(asset, type) {
     certPopupIframe.style.display = 'none';
     certPopupImg.style.display    = 'none';
     if (type === 'pdf') {
@@ -1000,107 +810,226 @@ function openCertPopup(asset, type) {
     }
     certPopup.style.display = 'flex';
 }
-function closeCertPopup() {
+function closeCertFilePopup() {
     certPopup.style.display = 'none';
-    certPopupIframe.src = '';
-    certPopupImg.src    = '';
+    certPopupIframe.src = ''; certPopupImg.src = '';
 }
-certPopupClose.addEventListener('click', closeCertPopup);
-certPopup.addEventListener('click', e => { if (e.target === certPopup) closeCertPopup(); });
+certPopupClose.addEventListener('click', closeCertFilePopup);
+certPopup.addEventListener('click', e => { if (e.target === certPopup) closeCertFilePopup(); });
 
-document.querySelectorAll('.cert-view-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const asset = btn.getAttribute('data-cert-asset');
-        const type  = btn.getAttribute('data-cert-type') || 'image';
-        openCertPopup(asset, type);
-    });
-});
-
-// ── Escape closes all popups ──
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-        bellabeatPopup.style.display = 'none';
-        perfPopup.style.display      = 'none';
-        atlasPopup.style.display     = 'none'; atlasIframe.src = '';
-        churnPopup.style.display     = 'none'; churnIframe.src = '';
-        closeCertPopup();
+/* ─────────────────────────────────────────────
+   CERTIFICATION GRID — Detail popup data
+───────────────────────────────────────────── */
+const certData = {
+    'cert-pl300': {
+        badgeType: 'badge',
+        badgeSrc:  'assets/microsoft_certified_power_bi_badge.png',
+        badgeAlt:  'Microsoft PL-300 Badge',
+        title:     'Power BI Data Analyst Associate (PL-300)',
+        issuer:    'Microsoft',
+        modules: [
+            'Earned Microsoft Certified: Power BI Data Analyst Associate (PL-300)',
+            'Covers data preparation, modeling, visualisation, analysis, and deployment in Power BI',
+            'Demonstrates proficiency in designing scalable data models and creating business-ready reports'
+        ],
+        asset: 'assets/Certificate_Microsoft_Certified_PowerBI_Data_Analyst.pdf',
+        assetType: 'pdf'
+    },
+    'cert-google': {
+        badgeType: 'badge',
+        badgeSrc:  'assets/google_data_analytics_badge.png',
+        badgeAlt:  'Google Badge',
+        title:     'Google Data Analytics Professional Certificate',
+        issuer:    'Google · Coursera',
+        modules: [
+            'Foundations: Data, Data, Everywhere',
+            'Ask Questions to Make Data-Driven Decisions',
+            'Prepare Data for Exploration',
+            'Process Data from Dirty to Clean',
+            'Analyse Data to Answer Questions',
+            'Share Data Through the Art of Visualisation',
+            'Introduction to Data Analysis using Python',
+            'Google Data Analytics Capstone: Complete a Case Study'
+        ],
+        asset: 'assets/Google_Data_Analytics_Certificate.pdf',
+        assetType: 'pdf'
+    },
+    'cert-powerbi': {
+        badgeType: 'badge',
+        badgeSrc:  'assets/Data_Analyst_in_PowerBI_Badge.png',
+        badgeAlt:  'Power BI Badge',
+        title:     'Data Analyst in Power BI',
+        issuer:    'DataCamp',
+        modules: [
+            'Introduction to Power BI',
+            'Introduction to DAX in Power BI',
+            'Data Visualisation in Power BI',
+            'Data Preparation & Transformation in Power BI',
+            'Data Modeling in Power BI',
+            'DAX Functions in Power BI',
+            'Exploratory Data Analysis & Trend Analysis',
+            'Reports Design in Power BI',
+            'Data Connections & Deploying Assets',
+            'Case Study 1 & Case Study 2'
+        ],
+        asset: 'assets/Data_Analyst_in_PowerBI.pdf',
+        assetType: 'pdf'
+    },
+    'cert-sql': {
+        badgeType: 'badge',
+        badgeSrc:  'assets/SQL_Fundamentals_Badge.png',
+        badgeAlt:  'SQL Fundamentals Badge',
+        title:     'SQL Fundamentals',
+        issuer:    'DataCamp',
+        modules: [
+            'Completed DataCamp SQL Fundamentals skill track covering querying, filtering, aggregation, joins, subqueries, and database design'
+        ],
+        asset: 'assets/SQL_Fundamentals.pdf',
+        assetType: 'pdf'
+    },
+    'cert-hackerrank': {
+        badgeType: 'badge',
+        badgeSrc:  'assets/SQL_Gold_Badge.png',
+        badgeAlt:  'HackerRank SQL Gold Badge',
+        title:     'Intermediate SQL Certification',
+        issuer:    'HackerRank',
+        modules: [
+            'Earned HackerRank Intermediate SQL Certification demonstrating proficiency in complex queries, window functions, and advanced SQL problem-solving'
+        ],
+        asset: 'assets/sql_intermediate certificate.pdf',
+        assetType: 'pdf'
+    },
+    'cert-ibm': {
+        badgeType: 'badge',
+        badgeSrc:  'assets/IBM_Data_Science_Methodology_Badge.png',
+        badgeAlt:  'IBM Badge',
+        title:     'Data Science Methodology',
+        issuer:    'IBM · Coursera',
+        modules: [
+            'Completed IBM Data Science Methodology course covering structured approaches to solving data science problems from business understanding through deployment'
+        ],
+        asset: 'assets/IBM_Data_Science_Methodology.pdf',
+        assetType: 'pdf'
+    },
+    'cert-alteryx': {
+        badgeType: 'logo',
+        badgeSrc:  'assets/alteryx.png',
+        badgeAlt:  'Alteryx',
+        title:     'Alteryx Essentials Certification',
+        issuer:    'Alteryx',
+        modules: [
+            'Completed Alteryx Essentials certification covering core data preparation and blending workflows'
+        ],
+        asset: 'assets/Alteryx_Essentials_Certificate.pdf',
+        assetType: 'pdf'
+    },
+    'cert-databricks': {
+        badgeType: 'logo',
+        badgeSrc:  'assets/databricks.png',
+        badgeAlt:  'Databricks',
+        title:     'Databricks Fundamentals Accreditation',
+        issuer:    'Databricks',
+        modules: [
+            'Completed Databricks Fundamentals Accreditation covering the Lakehouse Platform and core data engineering concepts'
+        ],
+        asset: 'assets/Databricks_Fundamentals_Certificate.pdf',
+        assetType: 'pdf'
+    },
+    'cert-microsoft': {
+        badgeType: 'logo',
+        badgeSrc:  'assets/microsoft.png',
+        badgeAlt:  'Microsoft',
+        title:     'Career Essentials in Generative AI',
+        issuer:    'Microsoft & LinkedIn Learning',
+        modules: [
+            'Completed Microsoft & LinkedIn Learning course on Generative AI essentials'
+        ],
+        asset: 'assets/CertificateOfCompletion_What Is Generative AI.pdf',
+        assetType: 'pdf'
     }
+};
+
+/* CERT DETAIL POPUP */
+const certDetailOverlay = document.getElementById('cert-detail-popup');
+const certDetailInner   = document.getElementById('certDetailInner');
+const certDetailClose   = document.getElementById('certDetailClose');
+
+function openCertDetail(certId) {
+    const d = certData[certId];
+    if (!d) return;
+
+    const imgMarkup = d.badgeType === 'badge'
+        ? `<div class="cdp-badge-wrap"><img src="${d.badgeSrc}" alt="${d.badgeAlt}" class="cdp-badge-img"></div>`
+        : `<div class="cdp-logo-wrap"><img src="${d.badgeSrc}" alt="${d.badgeAlt}" class="cdp-logo-img"></div>`;
+
+    const moduleLis = d.modules.map(m => `<li><i class="fas fa-check-circle"></i>${m}</li>`).join('');
+
+    certDetailInner.innerHTML = `
+        <div class="cdp-header">
+            ${imgMarkup}
+            <div class="cdp-header-text">
+                <h3>${d.title}</h3>
+                <p class="cdp-issuer"><i class="fas fa-building"></i> ${d.issuer}</p>
+                <span class="cert-status-badge cert-complete">Completed</span>
+            </div>
+        </div>
+        <ul class="cert-modules cdp-modules">${moduleLis}</ul>
+        <button class="cert-view-btn cdp-view-btn" data-asset="${d.asset}" data-type="${d.assetType}">
+            <i class="fas fa-file-pdf"></i> View Certificate
+        </button>
+    `;
+
+    // bind the view button inside the popup
+    certDetailInner.querySelector('.cdp-view-btn').addEventListener('click', function() {
+        openCertFilePopup(this.getAttribute('data-asset'), this.getAttribute('data-type'));
+    });
+
+    certDetailOverlay.style.display = 'flex';
+}
+
+function closeCertDetail() {
+    certDetailOverlay.style.display = 'none';
+    certDetailInner.innerHTML = '';
+}
+
+certDetailClose.addEventListener('click', closeCertDetail);
+certDetailOverlay.addEventListener('click', e => { if (e.target === certDetailOverlay) closeCertDetail(); });
+
+// Attach click to every cert-card-tile
+document.querySelectorAll('.cert-card-tile').forEach(tile => {
+    tile.addEventListener('click', () => openCertDetail(tile.getAttribute('data-cert')));
 });
 
-// ── Experience Tiles ──
+/* ─────────────────────────────────────────────
+   ESCAPE closes everything
+───────────────────────────────────────────── */
+document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    [bellabeatPopup, perfPopup].forEach(p => p.style.display = 'none');
+    atlasPopup.style.display  = 'none'; atlasIframe.src  = '';
+    churnPopup.style.display  = 'none'; churnIframe.src  = '';
+    closeCertFilePopup();
+    closeCertDetail();
+});
+
+/* ─────────────────────────────────────────────
+   EXPERIENCE TILES
+───────────────────────────────────────────── */
 document.querySelectorAll('.exp-tile').forEach(tile => {
     tile.querySelector('.exp-tile-front').addEventListener('click', () => {
         document.querySelectorAll('.exp-tile.flipped').forEach(t => { if (t !== tile) t.classList.remove('flipped'); });
         tile.classList.toggle('flipped');
     });
-    tile.querySelector('.exp-close-btn').addEventListener('click', e => {
-        e.stopPropagation();
-        tile.classList.remove('flipped');
-    });
+    tile.querySelector('.exp-close-btn').addEventListener('click', e => { e.stopPropagation(); tile.classList.remove('flipped'); });
 });
 
-// ── Certification Carousel ──
-(function() {
-    const track      = document.getElementById('certTrack');
-    const chips      = document.querySelectorAll('.cert-chip');
-    const panels     = document.querySelectorAll('.cert-detail-panel');
-    const arrowLeft  = document.getElementById('certArrowLeft');
-    const arrowRight = document.getElementById('certArrowRight');
-
-    function closeAllPanels() {
-        panels.forEach(p => p.classList.remove('cert-panel-open'));
-        chips.forEach(c => c.classList.remove('cert-chip-active'));
-    }
-
-    chips.forEach(chip => {
-        chip.addEventListener('click', () => {
-            const targetId = chip.getAttribute('data-cert-id');
-            const panel    = document.getElementById(targetId);
-            const isOpen   = chip.classList.contains('cert-chip-active');
-            closeAllPanels();
-            if (!isOpen) {
-                chip.classList.add('cert-chip-active');
-                panel.classList.add('cert-panel-open');
-                setTimeout(() => {
-                    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }, 60);
-            }
-        });
-    });
-
-    arrowLeft.addEventListener('click', () => { track.scrollBy({ left: -280, behavior: 'smooth' }); });
-    arrowRight.addEventListener('click', () => { track.scrollBy({ left: 280, behavior: 'smooth' }); });
-
-    function updateArrows() {
-        arrowLeft.style.opacity  = track.scrollLeft > 10 ? '1' : '0.3';
-        arrowLeft.style.pointerEvents = track.scrollLeft > 10 ? 'auto' : 'none';
-        const maxScroll = track.scrollWidth - track.clientWidth;
-        arrowRight.style.opacity  = track.scrollLeft < maxScroll - 10 ? '1' : '0.3';
-        arrowRight.style.pointerEvents = track.scrollLeft < maxScroll - 10 ? 'auto' : 'none';
-    }
-    track.addEventListener('scroll', updateArrows);
-    updateArrows();
-
-    const certSectionObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                chips.forEach((chip, i) => {
-                    chip.style.transitionDelay = `${i * 0.1}s`;
-                    chip.classList.add('cert-chip-visible');
-                });
-                certSectionObserver.disconnect();
-            }
-        });
-    }, { threshold: 0.05 });
-    const certTrackOuter = document.querySelector('.cert-track-outer');
-    if (certTrackOuter) certSectionObserver.observe(certTrackOuter);
-})();
-
-// ── Virtual Experience Tiles ──
+/* ─────────────────────────────────────────────
+   VIRTUAL TILES
+───────────────────────────────────────────── */
 document.querySelectorAll('.tile').forEach(tile => {
-    tile.querySelector('.tile-front').addEventListener('click', () => { tile.classList.toggle('active'); });
-    const closeBtn = tile.querySelector('.close-tile');
-    if (closeBtn) closeBtn.addEventListener('click', e => { e.stopPropagation(); tile.classList.remove('active'); });
+    tile.querySelector('.tile-front').addEventListener('click', () => tile.classList.toggle('active'));
+    const cb = tile.querySelector('.close-tile');
+    if (cb) cb.addEventListener('click', e => { e.stopPropagation(); tile.classList.remove('active'); });
 });
 </script>
 </body>
