@@ -41,7 +41,6 @@
             <li><a href="#volunteering" data-section="vol-body">Volunteering</a></li>
             <li><a href="#contact" data-section="contact-body">Contact</a></li>
         </ul>
-        
         <div class="nav-actions">
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <i class="fas fa-moon" id="themeIcon"></i>
@@ -650,12 +649,18 @@ if (window.matchMedia('(pointer: fine)').matches) {
 /* ─────────────────────────────────────────────
    COLLAPSIBLE SECTIONS
 ───────────────────────────────────────────── */
+var sectionsOpenByDefault = ['about-body', 'skills-body'];
+
 document.querySelectorAll('.section-toggle-header').forEach(function(header) {
     var targetId = header.getAttribute('data-target');
     var body = document.getElementById(targetId);
     var btn  = header.querySelector('.section-toggle-btn');
-    body.classList.add('collapsed');
-    btn.querySelector('i').style.transform = 'rotate(-90deg)';
+
+    if (sectionsOpenByDefault.indexOf(targetId) === -1) {
+        body.classList.add('collapsed');
+        btn.querySelector('i').style.transform = 'rotate(-90deg)';
+    }
+
     header.addEventListener('click', function() {
         var isCollapsed = body.classList.contains('collapsed');
         body.classList.toggle('collapsed', !isCollapsed);
