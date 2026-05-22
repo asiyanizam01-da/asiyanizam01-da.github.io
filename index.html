@@ -963,7 +963,16 @@ certDetailOverlay.addEventListener('click', e => { if (e.target === certDetailOv
 document.querySelectorAll('.cert-card-tile').forEach(tile => {
     tile.addEventListener('click', () => openCertDetail(tile.getAttribute('data-cert')));
 });
+/* ─────────────────────────────────────────────
+   CERTIFICATE FILE POPUP
+───────────────────────────────────────────── */
 
+function openCertFilePopup(asset, type) {
+    if (!asset) return;
+
+    // Open PDF/image in new tab
+    window.open(asset, '_blank');
+}
 /* ─────────────────────────────────────────────
    ESCAPE closes everything
 ───────────────────────────────────────────── */
