@@ -673,3 +673,73 @@ footer p { font-size:13px;color:rgba(255,255,255,.6);margin:0; }
     .cdp-header { flex-direction:column;align-items:center;text-align:center; }
     .cdp-issuer { justify-content:center; }
 }
+/* =====================================================================
+   CERT DETAIL POPUP — INLINE VIEWER
+   Add these rules to style.css (or paste at the bottom).
+   They replace the old #cert-popup / cert-popup-content rules.
+   ===================================================================== */
+
+/* 1. Remove the old separate cert file popup entirely — it's no longer used.
+      If you still have #cert-popup in your HTML you can delete that element,
+      but leaving it in won't cause any harm since it's never opened now.     */
+
+/* 2. The detail popup itself needs slightly more room to hold the viewer.    */
+.cert-detail-popup-content {
+    max-width:   660px;          /* was 640px — a touch wider for the viewer  */
+    max-height:  92vh;           /* was 88vh — more vertical space            */
+}
+
+/* 3. "View Certificate" / "Hide Certificate" toggle button                   */
+/*    Inherits most styles from .cert-view-btn / .cdp-view-btn already.       */
+.cdp-view-btn[data-open="true"] {
+    background: var(--surface-2);
+    color:      var(--accent);
+    border:     1px solid var(--accent);
+}
+.cdp-view-btn[data-open="true"]:hover {
+    background: var(--tag-bg);
+    transform:  translateY(-2px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+/* 4. Inline viewer container — collapsed by default, expands with class      */
+.cdp-inline-viewer {
+    overflow:      hidden;
+    max-height:    0;
+    margin-top:    0;
+    border-radius: 10px;
+    transition:    max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+                   margin-top 0.3s ease;
+}
+.cdp-inline-viewer--open {
+    max-height:  70vh;            /* tall enough for a readable PDF page      */
+    margin-top:  20px;
+}
+
+/* 5. The iframe / image inside the viewer                                    */
+.cdp-inline-iframe {
+    width:         100%;
+    height:        62vh;
+    border:        none;
+    border-radius: 10px;
+    display:       block;
+    background:    #000;          /* prevents flash of white while PDF loads  */
+}
+
+.cdp-inline-img {
+    width:         100%;
+    max-height:    62vh;
+    object-fit:    contain;
+    border-radius: 10px;
+    display:       block;
+}
+
+/* 6. Thin scrollbar on the detail popup (already in base CSS but repeated
+      here for completeness — safe to keep both)                              */
+.cert-detail-popup-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+}
+.cert-detail-popup-content::-webkit-scrollbar       { width: 4px; }
+.cert-detail-popup-content::-webkit-scrollbar-track { background: transparent; }
+.cert-detail-popup-content::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
