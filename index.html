@@ -794,7 +794,7 @@ var superstoreBtn    = document.querySelector('.superstore-btn');
 var superstorePopup  = document.getElementById('superstore-popup');
 var superstoreIframe = document.getElementById('superstore-iframe');
 var superstoreClose  = document.querySelector('.superstore-close');
-superstoreBtn.addEventListener('click', function() { superstoreIframe.src = 'assets/superstore_sales_dashboard.pdf'; superstorePopup.style.display = 'flex'; });
+superstoreBtn.addEventListener('click', function() { superstoreIframe.src = 'assets/superstore_sales_analysis_dashboard.pdf'; superstorePopup.style.display = 'flex'; });
 superstoreClose.addEventListener('click', function() { superstorePopup.style.display = 'none'; superstoreIframe.src = ''; });
 superstorePopup.addEventListener('click', function(e) { if (e.target === superstorePopup) { superstorePopup.style.display = 'none'; superstoreIframe.src = ''; } });
     
