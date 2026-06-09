@@ -95,7 +95,7 @@ document.querySelectorAll('.exp-tile').forEach(function(tile) {
 
         'cert-powerbi': {
             badgeType: 'badge',
-            badgeSrc:  'assets/Data_Analyst_in_PowerBI_Badge.png',
+            badgeSrc:  'assets/Data_Analyst_in_PowerBI_Badge_.png',
             badgeAlt:  'Power BI Badge',
             title:     'Data Analyst in Power BI',
             issuer:    'DataCamp',
@@ -130,7 +130,7 @@ document.querySelectorAll('.exp-tile').forEach(function(tile) {
 
         'cert-sql': {
             badgeType: 'badge',
-            badgeSrc:  'assets/SQL_Fundamentals_Badge.png',
+            badgeSrc:  'assets/SQL_Fundamentals_Badge_.png',
             badgeAlt:  'SQL Fundamentals Badge',
             title:     'SQL Fundamentals',
             issuer:    'DataCamp',
