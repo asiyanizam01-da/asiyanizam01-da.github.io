@@ -115,6 +115,19 @@ document.querySelectorAll('.exp-tile').forEach(function(tile) {
             assetType: 'pdf'
         },
 
+        'cert-sql-associate': {
+            badgeType: 'badge',
+            badgeSrc:  'assets/Associate_Data_Analyst_Badge.png',
+            badgeAlt:  'Associate Data Analyst in SQL Badge',
+            title:     'Associate Data Analyst in SQL',
+            issuer:    'DataCamp',
+            modules: [
+                'Completed DataCamp\'s Associate Data Analyst in SQL track, covering SQL foundations, PostgreSQL advanced functions and window functions, statistics, exploratory data analysis, data-driven decision making, and data visualization and communication concepts.'
+            ],
+            asset:     'assets/Associate_Data_Analyst_in_SQL.pdf',
+            assetType: 'pdf'
+        },
+
         'cert-sql': {
             badgeType: 'badge',
             badgeSrc:  'assets/SQL_Fundamentals_Badge.png',
