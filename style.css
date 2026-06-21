@@ -289,10 +289,11 @@ h3 { font-family:'DM Sans',sans-serif;font-size:16px;font-weight:600;color:var(-
 .tile-front.deloitte .tile-logo { width:110px; }
 .tile-front.citi { background-color:#003b70;border-color:transparent; }
 .tile-front.citi .tile-logo { width:110px; }
-.tile-hover-cue { font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.9);background:rgba(0,0,0,.45);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:5px 12px;display:flex;align-items:center;gap:6px;opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s ease;pointer-events:none; }
-.tile-front.deloitte .tile-hover-cue { color:rgba(0,0,0,.85);background:rgba(255,255,255,.6);border-color:rgba(0,0,0,.15); }
+.tile-hint { font-size:10px;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:5px;opacity:.85;margin-top:2px;font-family:'DM Sans',sans-serif; }
+.tile-hint i { font-size:10px;color:rgba(255,255,255,.75); }
+.tile-front.deloitte .tile-hint,
+.tile-front.deloitte .tile-hint i { color:rgba(0,0,0,.7); }
 .tile:not(.active):hover .tile-front { border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow),0 12px 36px rgba(0,0,0,.5); }
-.tile:not(.active):hover .tile-hover-cue { opacity:1;transform:translateY(0); }
 .tile-back { background:var(--surface);transform:rotateY(180deg);flex-direction:column;justify-content:space-between;overflow-y:auto;text-align:center; }
 .tile.active .tile-front { transform:rotateY(180deg); }
 .tile.active .tile-back  { transform:rotateY(0deg); }
@@ -661,7 +662,6 @@ footer p { font-size:13px;color:rgba(255,255,255,.6);margin:0; }
     .cert-detail-popup-content { padding:20px; }
     .cdp-header { gap:14px; }
     .cdp-badge-wrap, .cdp-badge-img { width:70px;height:70px; }
-    .tile-hover-cue { opacity:.75;transform:translateY(0); }
 }
 @media (max-width: 600px) {
     .skills-list { grid-template-columns:repeat(2,1fr); }
@@ -755,14 +755,3 @@ footer p { font-size:13px;color:rgba(255,255,255,.6);margin:0; }
         min-height: 420px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
